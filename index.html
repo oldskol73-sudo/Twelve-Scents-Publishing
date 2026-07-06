@@ -242,7 +242,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,7vw,84px) clamp(18px,4vw,40px);">
       <div class="hero-split" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:center;">
         <div style="position:relative;border-radius:6px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 24px 50px -28px rgba(44,32,48,.45);">
-          <video src="assets/Readingtochild.mp4" poster="assets/first-frame.jpg" autoplay loop muted playsinline preload="auto" aria-label="Reading, happy and black family with a book on the sofa, bonding together at home." style="width:100%;height:100%;object-fit:cover;"></video>
+          <video src="Readingtochild.mp4" poster="first-frame.jpg" autoplay loop muted playsinline preload="auto" aria-label="Reading, happy and black family with a book on the sofa, bonding together at home." style="width:100%;height:100%;object-fit:cover;"></video>
         </div>
         <div>
           <div style="font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;margin-bottom:14px;">What we offer</div>
@@ -717,9 +717,9 @@ class Component extends DCLogic {
 
   books() {
     return [
-      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'assets/abraham-cover.png', coverRatio: '2 / 3', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
-      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: 'assets/isaac-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
-      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: 'assets/jacob-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
+      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'abraham-cover.png', coverRatio: '2 / 3', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
+      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: 'isaac-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
+      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: 'jacob-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
     ];
   }
 
@@ -869,10 +869,10 @@ class Component extends DCLogic {
 
     // ---- Look Inside flip-through (Abraham interior spreads) ----
     const lookSpreads = [
-      { img: 'assets/look-1.png', label: 'The Hero Portrait',  ref: 'Genesis 15:6' },
-      { img: 'assets/look-2.png', label: 'The Call to Leave',  ref: 'Genesis 12:1–4' },
-      { img: 'assets/look-3.png', label: 'The Test of Faith',  ref: 'Genesis 22:1–6' },
-      { img: 'assets/look-4.png', label: 'The Promise Renewed', ref: 'Genesis 22:15–17' },
+      { img: 'look-1.png', label: 'The Hero Portrait',  ref: 'Genesis 15:6' },
+      { img: 'look-2.png', label: 'The Call to Leave',  ref: 'Genesis 12:1–4' },
+      { img: 'look-3.png', label: 'The Test of Faith',  ref: 'Genesis 22:1–6' },
+      { img: 'look-4.png', label: 'The Promise Renewed', ref: 'Genesis 22:15–17' },
     ];
     const lookN = lookSpreads.length;
     const li = ((s.lookIdx % lookN) + lookN) % lookN;
@@ -920,7 +920,7 @@ class Component extends DCLogic {
       featScripture: featured.scripture,
       featAge: featured.age,
       heroCoverStyle,
-      collageImg: 'assets/abraham-collage.png',
+      collageImg: 'abraham-collage.png',
       lookImg: lookCur.img,
       lookAlt: lookCur.label + ' — Abraham interior spread',
       lookCaption: lookCur.label + ' · ' + lookCur.ref,
