@@ -173,9 +173,25 @@
       </div>
 
       <!-- look inside -->
-      <figure style="margin:clamp(36px,5vw,56px) 0 0;">
-        <img src="{{ collageImg }}" alt="Interior spreads from Abraham — the hero portrait, the city of Ur, the call, and Jehovah-Jireh" style="width:100%;border-radius:6px;border:1px solid rgba(201,162,75,.4);box-shadow:0 24px 60px -30px rgba(0,0,0,.7);">
-        <figcaption style="text-align:center;margin-top:14px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#cdbfa3;">Look inside · The Hero Portrait — The City of Ur — The Call — Jehovah-Jireh</figcaption>
+      <figure style="margin:clamp(36px,5vw,56px) 0 0;text-align:center;">
+        <div style="display:inline-block;position:relative;line-height:0;max-width:100%;">
+          <img src="{{ lookImg }}" alt="{{ lookAlt }}" style="height:clamp(240px,36vw,380px);width:auto;max-width:100%;border-radius:8px;border:1px solid rgba(201,162,75,.4);box-shadow:0 20px 50px -28px rgba(0,0,0,.7);display:block;">
+          <div style="position:absolute;top:10px;right:10px;background:rgba(10,18,32,.62);color:#e7c36a;font-size:11px;font-weight:700;letter-spacing:.14em;padding:5px 11px;border-radius:999px;backdrop-filter:blur(4px);">{{ lookCounter }}</div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-top:18px;">
+          <button onClick="{{ lookPrev }}" aria-label="Previous spread" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(201,162,75,.5);background:transparent;color:#e7c36a;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;" style-hover="background:#e7c36a;color:#0a1220;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <sc-for list="{{ lookDots }}" as="d" hint-placeholder-count="4">
+              <button onClick="{{ d.onClick }}" aria-label="{{ d.label }}" style="{{ d.style }}"></button>
+            </sc-for>
+          </div>
+          <button onClick="{{ lookNext }}" aria-label="Next spread" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(201,162,75,.5);background:transparent;color:#e7c36a;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;" style-hover="background:#e7c36a;color:#0a1220;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+        <figcaption style="text-align:center;margin-top:14px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#cdbfa3;">Look inside · {{ lookCaption }}</figcaption>
       </figure>
     </div>
   </section>
@@ -331,7 +347,7 @@
     <div style="max-width:900px;margin:0 auto;padding:clamp(44px,6vw,80px) clamp(18px,4vw,40px);text-align:center;">
       <div style="font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;margin-bottom:16px;">About Twelve Scents</div>
       <h1 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(34px,5vw,56px);line-height:1.05;margin:0 0 20px;">Filling the empty shelf with heroes who look like our children.</h1>
-      <p style="font-size:clamp(16px,1.5vw,19px);line-height:1.7;color:#5d5360;margin:0 auto;max-width:640px;">We're a Black-owned, faith-rooted children's publisher creating Bible stories that center brown children — so every little reader can see themselves in scripture.</p>
+      <p style="font-size:clamp(16px,1.5vw,19px);line-height:1.7;color:#5d5360;margin:0 auto;max-width:640px;">We are brown-skin owned and Scripture rooted. We do not center brown children in Scripture—we Restore them to it. The Bible heroes were brown. Our children deserve to know them as they were, and the inheritance that flows through their bloodline.</p>
     </div>
   </section>
 
@@ -342,9 +358,10 @@
       </div>
       <div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.12;margin:0 0 20px;">Our story</h2>
-        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0 0 16px;">It started at bedtime. Searching for Bible storybooks for our own children, we kept asking the same question — <em>where are the heroes who look like them?</em> The shelves were beautiful, but the brown faces were missing.</p>
-        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0 0 16px;">So we began writing. Twelve Scents Publishing creates inspirational stories that are faithful to scripture, rooted in biblical heritage, and overflowing with the dignity and joy of brown children.</p>
-        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0;">Today our books are read at bedtimes, in classrooms, and in children's ministries across the country — and we're just getting started.</p>
+        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0 0 16px;">Twelve Scents Publishing exists because the Bible heroes were brown-skinned men and women—and for too long, our children have not seen them as they were. We did not set out to offer representation. We set out to restore the Record.</p>
+        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0 0 16px;">The 1611 King James Bible stands as our foundation. Every hero in this series is drawn from its pages, depicted according to the lands they walked and the lineage they carried. These are not stories. This is Scripture—the covenant inheritance of children who descend from the very lands where God spoke, where prophets walked, where the Messiah was born. We publish for the diaspora because the diaspora carries the seed.</p>
+        <p style="font-size:16px;line-height:1.75;color:#5d5360;margin:0;">Each book is crafted to build character: courage, obedience, faith, forgiveness. Not through sentiment, but through the weight of truth. Not through apology, but through the authority of the Word. We write for brown children because brown children deserve to meet Abraham, Moses, David, and Deborah as they were—heroes who looked like them, obeyed a God who called them, and left a legacy that endures. <p>The shelves were empty.</p> <p>We are filling them with The Truth!</p>
+        </p>
       </div>
     </div>
   </section>
@@ -354,7 +371,7 @@
     <div style="max-width:900px;margin:0 auto;padding:clamp(48px,7vw,90px) clamp(18px,4vw,40px);text-align:center;">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.3" style="margin:0 auto 22px;"><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M3 7l9 6 9-6M3 7l9-4 9 4"/></svg>
       <div style="font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#C9A24B;margin-bottom:18px;">Our mission</div>
-      <p style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(24px,3.4vw,38px);line-height:1.35;margin:0;">"To put a Bible hero who looks like them into the hands of every brown child — building courage, character, and belonging through stories worth reading again and again."</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(24px,3.4vw,38px);line-height:1.35;margin:0;">"To put a Bible hero who looks like them into the hands of every child of the diaspora — building courage, character, and belonging through stories worth reading again and again."</p>
     </div>
   </section>
 
@@ -373,7 +390,7 @@
       <div style="background:#fff;border:1px solid #ECE2D2;border-radius:6px;padding:28px 24px;">
         <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:#C9A24B;line-height:1;margin-bottom:12px;">II</div>
         <h3 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:21px;margin:0 0 8px;">Scripture-true</h3>
-        <p style="font-size:14px;line-height:1.6;color:#5d5360;margin:0;">Faithful retellings parents and pastors can trust.</p>
+        <p style="font-size:14px;line-height:1.6;color:#5d5360;margin:0;">Faithful retellings Parents and children can trust.</p>
       </div>
       <div style="background:#fff;border:1px solid #ECE2D2;border-radius:6px;padding:28px 24px;">
         <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:#C9A24B;line-height:1;margin-bottom:12px;">III</div>
@@ -383,7 +400,7 @@
       <div style="background:#fff;border:1px solid #ECE2D2;border-radius:6px;padding:28px 24px;">
         <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:#C9A24B;line-height:1;margin-bottom:12px;">IV</div>
         <h3 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:21px;margin:0 0 8px;">Family-owned</h3>
-        <p style="font-size:14px;line-height:1.6;color:#5d5360;margin:0;">A Black-owned business that knows the families it serves.</p>
+        <p style="font-size:14px;line-height:1.6;color:#5d5360;margin:0;">A Brown-skin owned business that knows the families it serves.</p>
       </div>
     </div>
   </section>
@@ -695,13 +712,14 @@ class Component extends DCLogic {
     sent: false,
     heroHover: false,
     heroPressed: false,
+    lookIdx: 0,
   };
 
   books() {
     return [
-      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'assets/abraham-cover.png', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
-      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: '', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
-      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: '', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
+      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'assets/abraham-cover.png', coverRatio: '2 / 3', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
+      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: 'assets/isaac-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
+      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: 'assets/jacob-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
     ];
   }
 
@@ -762,7 +780,7 @@ class Component extends DCLogic {
       priceLabel: this.money(b.price),
       hasImg: !!b.coverImg,
       noImg: !b.coverImg,
-      coverStyle: b.coverImg ? this.imgCoverStyle(b, '3 / 4') : this.coverStyle(b, '3 / 4'),
+      coverStyle: b.coverImg ? this.imgCoverStyle(b, b.coverRatio || '3 / 4') : this.coverStyle(b, '3 / 4'),
       accentStyle: { color: b.accent, fontSize: '11px', fontWeight: 700, letterSpacing: '.16em', textTransform: 'uppercase', marginBottom: '12px' },
       ruleStyle: { width: '34px', height: '3px', background: b.accent, margin: '12px 0' },
       statusLive: live,
@@ -849,6 +867,27 @@ class Component extends DCLogic {
         : '0 34px 66px -28px rgba(0,0,0,.7)',
     };
 
+    // ---- Look Inside flip-through (Abraham interior spreads) ----
+    const lookSpreads = [
+      { img: 'assets/look-1.png', label: 'The Hero Portrait',  ref: 'Genesis 15:6' },
+      { img: 'assets/look-2.png', label: 'The Call to Leave',  ref: 'Genesis 12:1–4' },
+      { img: 'assets/look-3.png', label: 'The Test of Faith',  ref: 'Genesis 22:1–6' },
+      { img: 'assets/look-4.png', label: 'The Promise Renewed', ref: 'Genesis 22:15–17' },
+    ];
+    const lookN = lookSpreads.length;
+    const li = ((s.lookIdx % lookN) + lookN) % lookN;
+    const lookCur = lookSpreads[li];
+    const lookDots = lookSpreads.map((sp, i) => ({
+      label: 'View ' + sp.label,
+      onClick: () => this.setState({ lookIdx: i }),
+      style: {
+        width: i === li ? '24px' : '9px', height: '9px', borderRadius: '999px',
+        border: 'none', padding: 0, cursor: 'pointer',
+        background: i === li ? '#e7c36a' : 'rgba(201,162,75,.35)',
+        transition: 'all .25s ease',
+      },
+    }));
+
     return {
       year: new Date().getFullYear(),
       isHome: s.page === 'home', isAbout: s.page === 'about', isShop: s.page === 'shop',
@@ -882,6 +921,13 @@ class Component extends DCLogic {
       featAge: featured.age,
       heroCoverStyle,
       collageImg: 'assets/abraham-collage.png',
+      lookImg: lookCur.img,
+      lookAlt: lookCur.label + ' — Abraham interior spread',
+      lookCaption: lookCur.label + ' · ' + lookCur.ref,
+      lookCounter: (li + 1) + ' / ' + lookN,
+      lookPrev: () => this.setState({ lookIdx: li - 1 }),
+      lookNext: () => this.setState({ lookIdx: li + 1 }),
+      lookDots,
       amazonUrl: all[0].amazon,
       addFeatured: () => this.addToCart('b1'),
       heroEnter: () => this.setState({ heroHover: true }),
