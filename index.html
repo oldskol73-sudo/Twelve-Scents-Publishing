@@ -59,7 +59,7 @@
   <div style="max-width:1200px;margin:0 auto;padding:13px clamp(18px,4vw,40px);display:flex;align-items:center;justify-content:space-between;gap:18px;">
     <a onClick="{{ goHome }}" style="display:flex;align-items:center;gap:11px;cursor:pointer;">
       <span style="width:40px;height:40px;border-radius:50%;border:1.5px solid #C9A24B;display:flex;align-items:center;justify-content:center;color:#9A7B2E;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;flex:none;">12</span>
-      <span style="font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;letter-spacing:.01em;line-height:1;">Twelve&nbsp;Scents<span style="display:block;font-family:'Spline Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#9A7B2E;margin-top:3px;">Publishing</span></span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;letter-spacing:.01em;line-height:1;">Twelve&nbsp;Scents<span style="display:block;font-family:'Spline Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#9A7B2E;margin-top:3px;text-align:center;">Publishing</span></span>
     </a>
 
     <div style="display:flex;align-items:center;gap:clamp(14px,2vw,30px);">
@@ -118,12 +118,17 @@
           <a onClick="{{ goAbout }}" style="display:inline-flex;align-items:center;background:transparent;color:#2C2030;border:1.5px solid #cbb89c;padding:15px 28px;border-radius:2px;font-weight:600;font-size:16px;cursor:pointer;" style-hover="border-color:#2C2030;">Our Story</a>
         </div>
       </div>
-      <div style="position:relative;">
-        <div style="position:absolute;inset:auto -10px -14px auto;width:140px;height:140px;border-radius:50%;background:#C9A24B;opacity:.25;z-index:0;"></div>
-        <div style="position:relative;z-index:1;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(44,32,48,.5);aspect-ratio:4/4.4;">
-          <img src="https://images.unsplash.com/photo-1597524678053-5e6fef52d8a3?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="A joyful Black father lifting his laughing child while the mother smiles, reflecting the families Twelve Scents Publishing serves" style="width:100%;height:100%;object-fit:cover;">
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;padding:clamp(24px,4vw,44px) 0;animation:tsFadeUp .7s ease both;">
+        <!-- warm glow behind the books -->
+        <div style="position:absolute;width:min(86%,460px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#C9A24B 0%,rgba(201,162,75,0) 66%);opacity:.3;z-index:0;"></div>
+        <!-- fanned real book covers -->
+        <div style="position:relative;z-index:1;width:min(62%,244px);">
+          <img src="assets/isaac-cover.png" alt="Isaac: The Promised Son — book cover" style="position:absolute;top:9%;left:-40%;width:80%;border-radius:5px;transform:rotate(-9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
+          <img src="assets/jacob-cover.png" alt="The Chosen: Jacob — book cover" style="position:absolute;top:9%;right:-40%;width:80%;border-radius:5px;transform:rotate(9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
+          <img src="assets/abraham-cover.png" alt="Abraham: The Father Who Believed God — book cover" style="position:relative;z-index:2;display:block;width:100%;border-radius:6px;box-shadow:0 42px 74px -30px rgba(11,20,40,.9);border:1px solid rgba(201,162,75,.6);">
         </div>
-        <div style="position:absolute;z-index:2;left:-18px;bottom:26px;background:#fff;border-radius:4px;padding:14px 18px;box-shadow:0 16px 36px -16px rgba(44,32,48,.4);display:flex;align-items:center;gap:12px;">
+        <!-- library stat card -->
+        <div style="position:absolute;z-index:3;left:-8px;bottom:6%;background:#fff;border-radius:4px;padding:14px 18px;box-shadow:0 16px 36px -16px rgba(44,32,48,.4);display:flex;align-items:center;gap:12px;">
           <span style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:#9A7B2E;line-height:1;">48</span>
           <span style="font-size:13px;font-weight:500;color:#5d5360;line-height:1.3;">Books across<br>11 series</span>
         </div>
@@ -797,17 +802,14 @@ We are brown-skin owned and Scripture rooted. The heroes of the Bible were never
           <a onClick="{{ goAbout }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">About</a>
           <a onClick="{{ goShop }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Shop</a>
           <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Listings</a>
-          <a href="blog.html" style="color:#a99bab;">Blog</a>
           <a onClick="{{ goContact }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Contact</a>
         </div>
       </div>
       <div>
-        <h3 style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F6F1E9;margin:0 0 16px;">Themes</h3>
+        <h3 style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F6F1E9;margin:0 0 16px;">Series</h3>
         <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;">
-          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Courage</a>
-          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Obedience</a>
-          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Faith</a>
-          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Forgiveness</a>
+          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Mighty Men of Valor</a>
+          <a onClick="{{ goListings }}" style="cursor:pointer;color:#a99bab;" style-hover="color:#C9A24B;">Daughters of Sarah</a>
         </div>
       </div>
       <div>
@@ -903,8 +905,8 @@ class Component extends DCLogic {
 
   dosBooks() {
     return [
-      { id: 'd1', title: "Sarah: The Mother of Nations Who Called Him Lord", short: 'Sarah', skey: 'dos', num: 1, total: 18, subtitle: 'The Mother of Nations Who Called Him Lord', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#2a1810', '#150b06'], accent: '#E6B655', coverImg: 'assets/sarah-cover-front.png', coverRatio: '1122 / 1402', status: 'presale', scripture: 'Genesis 12–23 · 1 Peter 3:5–6', amazon: 'https://www.amazon.com', blurb: "The companion to Abraham begins here. Sarah left Ur at his side, waited a lifetime for the child of promise, and laughed when God turned the impossible into Isaac. Scripture holds up her faith and quiet reverence as the pattern for every daughter who trusts God — the mother of nations, and the first of the Daughters of Sarah." },
-      { id: 'd2', title: "Rebekah: The Bride Who Went Without Delay", short: 'Rebekah', skey: 'dos', num: 2, total: 18, subtitle: 'The Bride Who Went Without Delay', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#241a12', '#120c08'], accent: '#E6B655', coverImg: 'assets/dos-rebekah.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Genesis 24', amazon: '', blurb: "Book 2 of the Daughters of Sarah. When God's servant called, Rebekah answered 'I will go' — and became the bride of promise without delay." },
+      { id: 'd1', title: "Sarah: The Mother of Nations Who Called Him Lord", short: 'Sarah', skey: 'dos', num: 1, total: 18, subtitle: 'The Mother of Nations Who Called Him Lord', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#2a1810', '#150b06'], accent: '#E6B655', coverImg: 'assets/dos-sarah.png', coverRatio: '163 / 279', status: 'presale', scripture: 'Genesis 12–23 · 1 Peter 3:5–6', amazon: 'https://www.amazon.com', blurb: "The companion to Abraham begins here. Sarah left Ur at his side, waited a lifetime for the child of promise, and laughed when God turned the impossible into Isaac. Scripture holds up her faith and quiet reverence as the pattern for every daughter who trusts God — the mother of nations, and the first of the Daughters of Sarah." },
+      { id: 'd2', title: "Rebekah: The Bride Who Went Without Delay", short: 'Rebekah', skey: 'dos', num: 2, total: 18, subtitle: 'The Bride Who Went Without Delay', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#241a12', '#120c08'], accent: '#E6B655', coverImg: 'assets/dos-rebekah.png', coverRatio: '1086 / 1448', status: 'soon', scripture: 'Genesis 24', amazon: '', blurb: "Book 2 of the Daughters of Sarah. When God's servant called, Rebekah answered 'I will go' — and became the bride of promise without delay." },
       { id: 'd3', title: "Miriam: The Sister Who Watched and Sang", short: 'Miriam', skey: 'dos', num: 3, total: 18, subtitle: 'The Sister Who Watched and Sang', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#1f1a14', '#100c08'], accent: '#E6B655', coverImg: 'assets/dos-miriam.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2, 15', amazon: '', blurb: "Book 3 of the Daughters of Sarah. She watched over her baby brother by the river and later led the women in song by the sea." },
       { id: 'd4', title: "Jochebed: The Mother Who Hid Him in Faith", short: 'Jochebed', skey: 'dos', num: 4, total: 18, subtitle: 'The Mother Who Hid Him in Faith', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#261c12', '#130d07'], accent: '#E6B655', coverImg: 'assets/dos-jochebed.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2', amazon: '', blurb: "Book 4 of the Daughters of Sarah. She hid her son in faith and trusted God with the deliverer of Israel." },
       { id: 'd5', title: "Hannah: The Mother Who Prayed and Let Him Go", short: 'Hannah', skey: 'dos', num: 5, total: 18, subtitle: 'The Mother Who Prayed and Let Him Go', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#221812', '#110b07'], accent: '#E6B655', coverImg: 'assets/dos-hannah.png', coverRatio: '163 / 279', status: 'soon', scripture: '1 Samuel 1–2', amazon: '', blurb: "Book 5 of the Daughters of Sarah. She poured out her heart to God, and when He answered, she gave her son back to Him." },
@@ -994,6 +996,19 @@ class Component extends DCLogic {
       add: () => this.addToCart(b.id),
     };
   }
+
+  componentDidMount() {
+    const kick = () => {
+      document.querySelectorAll('video[autoplay]').forEach(v => {
+        v.muted = true;
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+      });
+    };
+    kick();
+    this._vidTimer = setInterval(kick, 2000);
+  }
+  componentWillUnmount() { clearInterval(this._vidTimer); }
 
   renderVals() {
     const s = this.state;
