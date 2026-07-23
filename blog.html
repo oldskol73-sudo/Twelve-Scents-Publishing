@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Journal | Twelve Scents Publishing</title>
+<meta name="description" content="Stories behind our brown-skin Bible heroes, publishing news, and faith &amp; parenting reflections from Twelve Scents Publishing.">
+<meta name="keywords" content="Bible stories blog, Black biblical heroes, Christian parenting, brown children Bible books, Twelve Scents Publishing news">
+<meta property="og:title" content="The Journal | Twelve Scents Publishing">
+<meta property="og:description" content="Stories behind our brown-skin Bible heroes, publishing news, and faith & parenting reflections.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+  WordPress portability notes:
+  This page is a static, self-contained preview of the "Blog" page so it can be
+  opened directly and dropped into the site as-is. Markup uses WordPress-standard
+  conventions so it maps cleanly onto a real theme:
+    <article class="post hentry" data-category="..."> -> the Loop / WP_Query item
+    .post-thumbnail img                                -> get_the_post_thumbnail()
+    .cat-links a                                        -> get_the_category_list()
+    .entry-title a                                      -> the_title() / the_permalink()
+    .entry-meta time[datetime]                          -> get_the_date( 'c' )
+    .entry-content p                                    -> the_excerpt()
+    .widget / .widget-title                             -> a registered sidebar (dynamic_sidebar)
+    nav.pagination                                      -> the_posts_pagination()
+  Swap the hard-coded <article> blocks for a WP Loop and this CSS/markup can be
+  reused verbatim as a page-templates/template-blog.php file.
+-->
+
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Spline Sans',system-ui,sans-serif;color:#2C2030;background:#F6F1E9;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  button{font-family:inherit;border:none;background:none;cursor:pointer}
+  a{text-decoration:none;color:inherit}
+  ul{list-style:none;margin:0;padding:0}
+  input{font-family:inherit}
+  ::selection{background:#C9A24B;color:#2C2030}
+
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E}
+  .divider-gold{width:60px;height:2px;background:#C9A24B;margin:16px 0}
+  .divider-gold.center{margin:16px auto}
+
+  /* ---------- header (mirrors index.html) ---------- */
+  header.site-header{position:sticky;top:0;z-index:60;background:rgba(246,241,233,.9);backdrop-filter:blur(12px);border-bottom:1px solid #E4D8C7}
+  .header-inner{max-width:1200px;margin:0 auto;padding:13px clamp(18px,4vw,40px);display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .brand{display:flex;align-items:center;gap:11px}
+  .brand-badge{width:40px;height:40px;border-radius:50%;border:1.5px solid #C9A24B;display:flex;align-items:center;justify-content:center;color:#9A7B2E;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;flex:none}
+  .brand-name{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;letter-spacing:.01em;line-height:1}
+  .brand-sub{display:block;font-family:'Spline Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#9A7B2E;margin-top:3px}
+  .nav-links{display:flex;align-items:center;gap:clamp(16px,2vw,30px);font-size:15px;font-weight:500}
+  .nav-links a{padding:4px 0;border-bottom:2px solid transparent}
+  .nav-links a.active,.nav-links a:hover{border-color:#C9A24B;color:#9A7B2E}
+  .btn-gold{display:inline-flex;align-items:center;background:#C9A24B;color:#2C2030;padding:10px 20px;border-radius:2px;font-weight:600;font-size:14px;letter-spacing:.02em}
+  .btn-gold:hover{background:#b8902f}
+  .btn-dark{display:inline-flex;align-items:center;gap:9px;background:#2C2030;color:#F6F1E9;padding:14px 26px;border-radius:2px;font-weight:600;font-size:15px}
+  .btn-dark:hover{background:#3d2d44}
+  .toggle{display:none;width:42px;height:42px;border-radius:8px;align-items:center;justify-content:center;color:#2C2030}
+  .toggle:hover{background:#EFE6D6}
+  .mobile-menu{display:none;border-top:1px solid #E4D8C7;background:#F6F1E9}
+  .mobile-menu nav{display:flex;flex-direction:column;padding:8px clamp(18px,4vw,40px) 18px}
+  .mobile-menu a{padding:13px 0;border-bottom:1px solid #ECE2D2;font-weight:500}
+  .mobile-menu .btn-gold{margin-top:14px;justify-content:center;text-align:center}
+  @media(max-width:880px){
+    .nav-links{display:none}
+    .toggle{display:flex}
+    .mobile-menu.open{display:block}
+    .grid-3{grid-template-columns:1fr !important}
+    .layout{grid-template-columns:1fr !important}
+    .hero-grid{grid-template-columns:1fr !important}
+  }
+
+  /* ---------- hero ---------- */
+  .blog-hero{background:#0b1428;color:#f3e9d2;position:relative;overflow:hidden}
+  .blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 760px 460px at 82% 26%,rgba(201,162,75,.18),transparent 62%),radial-gradient(ellipse 620px 420px at 12% 88%,rgba(92,51,23,.35),transparent 66%);pointer-events:none}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(48px,7vw,84px) 0}
+  .breadcrumb{font-size:12px;color:#cdbfa3;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+  .breadcrumb a{color:#e7c36a}
+  .blog-hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(36px,5.4vw,58px);line-height:1.04;margin:0 0 18px}
+  .blog-hero p.lead{font-size:clamp(15px,1.5vw,18px);line-height:1.7;color:#ddd0b6;max-width:480px;margin:0}
+  .hero-figure{position:relative;text-align:center}
+  .hero-figure .tilt{display:inline-block;transform:rotate(-3deg);border-radius:8px;overflow:hidden;border:1px solid rgba(201,162,75,.4);box-shadow:0 30px 60px -24px rgba(0,0,0,.7);max-width:100%}
+  .hero-figure img{width:100%;max-width:420px;height:auto}
+  .hero-figure .badge{position:absolute;top:14px;right:calc(50% - 200px);background:rgba(10,18,32,.7);color:#e7c36a;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+  @media(max-width:880px){.hero-figure .badge{right:12px}}
+
+  /* ---------- category strip ---------- */
+  .cat-strip{background:#C9A24B}
+  .cat-strip .wrap{display:flex;flex-wrap:wrap;gap:10px;padding:16px clamp(18px,4vw,40px)}
+  .cat-pill{padding:8px 18px;border-radius:999px;border:1.5px solid rgba(44,32,48,.35);font-size:13px;font-weight:700;letter-spacing:.03em;color:#2C2030;background:transparent;white-space:nowrap}
+  .cat-pill.active,.cat-pill:hover{background:#2C2030;color:#C9A24B;border-color:#2C2030}
+
+  /* ---------- layout ---------- */
+  .layout{display:grid;grid-template-columns:2.1fr 1fr;gap:clamp(32px,4vw,56px);padding:clamp(44px,6vw,76px) 0}
+
+  /* ---------- featured post ---------- */
+  .featured-post{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3vw,40px);align-items:center;background:#fff;border:1px solid #ECE2D2;border-radius:8px;padding:clamp(20px,3vw,32px);margin-bottom:clamp(36px,5vw,56px)}
+  @media(max-width:700px){.featured-post{grid-template-columns:1fr}}
+  .featured-post .thumb{border-radius:6px;overflow:hidden;box-shadow:0 20px 44px -24px rgba(44,32,48,.4)}
+  .featured-post .thumb img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+  .badge-pill{display:inline-block;background:#F4E9D6;color:#9A7B2E;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:14px}
+  .entry-title{font-family:'Cormorant Garamond',serif;font-weight:700;color:#2C2030;line-height:1.12;margin:0 0 12px}
+  .featured-post .entry-title{font-size:clamp(24px,3vw,34px)}
+  .entry-meta{font-size:13px;color:#8a7f8d;margin-bottom:14px}
+  .entry-meta .sep{margin:0 6px}
+  .entry-content p{font-size:15.5px;line-height:1.7;color:#5d5360;margin:0 0 18px}
+  .read-more{display:inline-flex;align-items:center;gap:8px;color:#2C2030;border-bottom:1.5px solid #C9A24B;padding-bottom:2px;font-weight:600;font-size:14.5px}
+  .read-more:hover{color:#9A7B2E}
+
+  /* ---------- post grid ---------- */
+  .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,2.4vw,28px)}
+  @media(max-width:700px){.post-grid{grid-template-columns:1fr}}
+  article.post{background:#fff;border:1px solid #ECE2D2;border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+  article.post:hover{box-shadow:0 20px 40px -26px rgba(44,32,48,.35);transform:translateY(-3px)}
+  article.post .post-thumbnail{aspect-ratio:4/3;overflow:hidden}
+  article.post .post-thumbnail img{width:100%;height:100%;object-fit:cover}
+  article.post .entry-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  article.post .entry-title{font-size:19px}
+  article.post .entry-content p{font-size:14.5px;margin-bottom:16px}
+  article.post .read-more{margin-top:auto}
+  .cat-links a{display:inline-block;background:#F0E7D8;color:#9A7B2E;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:12px}
+
+  /* ---------- pagination ---------- */
+  nav.pagination{display:flex;justify-content:center;gap:8px;margin-top:clamp(36px,5vw,56px)}
+  nav.pagination a,nav.pagination span{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:#5d5360;border:1px solid #ECE2D2}
+  nav.pagination .page-numbers.current{background:#2C2030;color:#C9A24B;border-color:#2C2030}
+  nav.pagination a:hover{border-color:#C9A24B;color:#9A7B2E}
+
+  /* ---------- sidebar ---------- */
+  .widget-area{display:flex;flex-direction:column;gap:22px}
+  .widget{background:#241A28;color:#cfc3d0;border-radius:8px;padding:26px 24px}
+  .widget-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:#F6F1E9;margin:0 0 16px}
+  .widget-categories ul{display:flex;flex-direction:column;gap:11px}
+  .widget-categories a{display:flex;justify-content:space-between;font-size:14px;color:#cfc3d0}
+  .widget-categories a:hover{color:#C9A24B}
+  .widget-categories a.active{color:#C9A24B;font-weight:600}
+  .widget-recent li{padding:12px 0;border-bottom:1px solid #3a2f40;display:flex;gap:12px}
+  .widget-recent li:last-child{border-bottom:none;padding-bottom:0}
+  .widget-recent img{width:56px;height:56px;border-radius:4px;object-fit:cover;flex:none}
+  .widget-recent .t{font-family:'Cormorant Garamond',serif;font-size:14.5px;font-weight:600;color:#F6F1E9;line-height:1.3}
+  .widget-recent .d{font-size:12px;color:#a99bab;margin-top:4px}
+  .widget-newsletter{background:#F0E7D8;color:#2C2030}
+  .widget-newsletter .widget-title{color:#2C2030}
+  .widget-newsletter p{font-size:14px;line-height:1.6;color:#5d5360;margin:0 0 16px}
+  .widget-newsletter form{display:flex;flex-direction:column;gap:10px}
+  .widget-newsletter input{padding:12px 14px;border:1.5px solid #dccba4;border-radius:2px;font-size:14px;background:#fff}
+  .widget-newsletter input:focus{outline:none;border-color:#C9A24B}
+  .widget-about p{font-size:13.5px;line-height:1.7;color:#a99bab;margin:0}
+
+  /* ---------- footer (mirrors index.html) ---------- */
+  footer.site-footer{background:#241A28;color:#cfc3d0}
+  .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:clamp(28px,4vw,48px);padding:clamp(44px,6vw,72px) 0 clamp(34px,4vw,52px)}
+  @media(max-width:880px){.footer-top{grid-template-columns:1fr 1fr}}
+  .footer-brand-row{display:flex;align-items:center;gap:11px;margin-bottom:18px}
+  .footer-h{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F6F1E9;margin:0 0 16px}
+  .footer-col a{display:block;font-size:14px;color:#a99bab;padding:5.5px 0}
+  .footer-col a:hover{color:#C9A24B}
+  .footer-social{display:flex;gap:10px;margin-top:4px}
+  .footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid #463a4c;color:#cfc3d0;display:flex;align-items:center;justify-content:center}
+  .footer-social a:hover{background:#C9A24B;color:#241A28;border-color:#C9A24B}
+  .footer-bottom{border-top:1px solid #3a2f40;padding:22px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:#857890}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-badge">12</span>
+      <span class="brand-name">Twelve&nbsp;Scents<span class="brand-sub">Publishing</span></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:clamp(14px,2vw,30px);">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html">Shop</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="mailto:salessupport@twelve12scents.com">Contact</a>
+      </nav>
+      <a href="index.html" class="btn-gold nav-links" style="display:inline-flex">Shop the Books</a>
+      <button class="toggle" id="mobileToggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="mailto:salessupport@twelve12scents.com">Contact</a>
+      <a href="index.html" class="btn-gold">Shop the Books</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================ BLOG HERO ============================ -->
+  <section class="blog-hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
+        <div class="eyebrow" style="color:#e7c36a;">The Twelve Scents Journal</div>
+        <h1>Stories, heritage &amp; heroes who look like your children.</h1>
+        <div class="divider-gold"></div>
+        <p class="lead">Behind-the-page notes on our brown-skin Bible heroes, publishing news, and reflections on raising children in faith.</p>
+      </div>
+      <div class="hero-figure">
+        <div class="tilt">
+          <img src="abraham-collage.png" alt="Collage of illustrations from the Abraham storybook, brown-skinned Bible heroes depicted with warmth and dignity">
+        </div>
+        <span class="badge">Behind the Scents</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CATEGORY STRIP ============================ -->
+  <section class="cat-strip">
+    <div class="wrap">
+      <button class="cat-pill active" data-filter="all">All Posts</button>
+      <button class="cat-pill" data-filter="patriarchs">Patriarchs</button>
+      <button class="cat-pill" data-filter="matriarchs">Matriarchs</button>
+      <button class="cat-pill" data-filter="behind-the-scenes">Behind the Scenes</button>
+      <button class="cat-pill" data-filter="parenting-faith">Parenting &amp; Faith</button>
+      <button class="cat-pill" data-filter="announcements">Announcements</button>
+    </div>
+  </section>
+
+  <!-- ============================ MAIN LAYOUT ============================ -->
+  <div class="wrap layout">
+
+    <!-- ---------- content column ---------- -->
+    <div>
+
+      <!-- Featured post -->
+      <article class="post hentry featured-post" data-category="patriarchs">
+        <div class="thumb post-thumbnail">
+          <img src="abraham-cover.png" alt="Cover illustration of Abraham, the father who believed God, from the Twelve Scents Abraham storybook">
+        </div>
+        <div>
+          <span class="badge-pill">★ Featured Story</span>
+          <h2 class="entry-title"><a href="#">Meet Abraham: The Father Who Believed God</a></h2>
+          <div class="entry-meta"><span>Twelve Scents Team</span><span class="sep">·</span><time datetime="2026-07-14">July 14, 2026</time><span class="sep">·</span><span>4 min read</span></div>
+          <div class="entry-content">
+            <p>Long before he was a legend, Abraham was a man asked to trust a promise he could not yet see. In our very first storybook, we set out to show brown children a hero whose obedience — not his perfection — made him great. Here's why his story anchors the entire Twelve Scents series.</p>
+          </div>
+          <a href="#" class="read-more">Read the full story
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Post grid -->
+      <div class="post-grid">
+
+        <article class="post hentry" data-category="matriarchs">
+          <div class="post-thumbnail"><img src="sarah-cover-front.png" alt="Cover illustration of Sarah for the companion storybook to Abraham"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="matriarchs">Matriarchs</a></div>
+            <h3 class="entry-title"><a href="#">Sarah's Obedience: A Companion Story to Abraham</a></h3>
+            <div class="entry-meta"><time datetime="2026-07-08">July 8, 2026</time><span class="sep">·</span><span>3 min read</span></div>
+            <div class="entry-content"><p>Sarah's faith is often told in Abraham's shadow. Our companion series gives her the front cover — and the whole story — she deserves.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="patriarchs">
+          <div class="post-thumbnail"><img src="isaac-cover.png" alt="Cover illustration of Isaac, the promised son"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="patriarchs">Patriarchs</a></div>
+            <h3 class="entry-title"><a href="#">Isaac: The Promised Son</a></h3>
+            <div class="entry-meta"><time datetime="2026-06-29">June 29, 2026</time><span class="sep">·</span><span>3 min read</span></div>
+            <div class="entry-content"><p>What does it mean to grow up as the child of a promise? Isaac's quiet, steady faith teaches young readers about trust that doesn't need to shout.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="patriarchs">
+          <div class="post-thumbnail"><img src="jacob-cover.png" alt="Cover illustration of Jacob's journey"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="patriarchs">Patriarchs</a></div>
+            <h3 class="entry-title"><a href="#">Jacob's Journey: Wrestling With Purpose</a></h3>
+            <div class="entry-meta"><time datetime="2026-06-20">June 20, 2026</time><span class="sep">·</span><span>4 min read</span></div>
+            <div class="entry-content"><p>Jacob's story is messy, human, and ultimately redemptive — exactly why it resonates so deeply with kids who are still figuring themselves out.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="matriarchs">
+          <div class="post-thumbnail"><img src="dos-hannah.png" alt="Illustration of Hannah, from the Daughters of Scripture series"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="matriarchs">Matriarchs</a></div>
+            <h3 class="entry-title"><a href="#">Daughters of Scripture: Hannah, Miriam, Rebekah &amp; Sarah</a></h3>
+            <div class="entry-meta"><time datetime="2026-06-11">June 11, 2026</time><span class="sep">·</span><span>5 min read</span></div>
+            <div class="entry-content"><p>An inside look at the women's collection — four covers, four callings, and one shared thread of faith we hope every daughter will carry.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="behind-the-scenes">
+          <div class="post-thumbnail"><img src="OurStory.png" alt="The shelves were empty, we are filling them with the truth graphic"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="behind-the-scenes">Behind the Scenes</a></div>
+            <h3 class="entry-title"><a href="#">Why We Chose the 1611 King James Bible as Our Foundation</a></h3>
+            <div class="entry-meta"><time datetime="2026-05-30">May 30, 2026</time><span class="sep">·</span><span>6 min read</span></div>
+            <div class="entry-content"><p>Every hero we publish is drawn from Scripture, not sentiment. Here's why the 1611 KJV anchors every book we write.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="parenting-faith">
+          <div class="post-thumbnail"><img src="first-frame.jpg" alt="A parent reading a Bible storybook aloud to their child on the sofa"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="parenting-faith">Parenting &amp; Faith</a></div>
+            <h3 class="entry-title"><a href="#">Reading the Word Together: A Family Devotional Guide</a></h3>
+            <div class="entry-meta"><time datetime="2026-05-19">May 19, 2026</time><span class="sep">·</span><span>4 min read</span></div>
+            <div class="entry-content"><p>Five simple questions to ask after storytime that turn a picture book into a real conversation about faith.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+        <article class="post hentry" data-category="announcements">
+          <div class="post-thumbnail"><img src="MenofValorPatriarchs.png" alt="Announcement graphic for the Men of Valor patriarchs series"></div>
+          <div class="entry-body">
+            <div class="cat-links"><a href="#" data-filter="announcements">Announcements</a></div>
+            <h3 class="entry-title"><a href="#">Introducing Men of Valor: Our Full Patriarchs Series</a></h3>
+            <div class="entry-meta"><time datetime="2026-05-05">May 5, 2026</time><span class="sep">·</span><span>2 min read</span></div>
+            <div class="entry-content"><p>Abraham, Isaac, and Jacob are just the beginning — here's what's coming next in the Men of Valor collection.</p></div>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <nav class="pagination" aria-label="Posts navigation">
+        <span class="page-numbers current">1</span>
+        <a href="#" class="page-numbers">2</a>
+        <a href="#" class="page-numbers">3</a>
+        <a href="#" class="page-numbers next" aria-label="Next page">→</a>
+      </nav>
+
+    </div>
+
+    <!-- ---------- sidebar ---------- -->
+    <aside class="widget-area">
+      <div class="widget widget-categories">
+        <h3 class="widget-title">Browse by Category</h3>
+        <ul>
+          <li><a href="#" data-filter="all" class="active">All Posts <span>08</span></a></li>
+          <li><a href="#" data-filter="patriarchs">Patriarchs <span>03</span></a></li>
+          <li><a href="#" data-filter="matriarchs">Matriarchs <span>02</span></a></li>
+          <li><a href="#" data-filter="behind-the-scenes">Behind the Scenes <span>01</span></a></li>
+          <li><a href="#" data-filter="parenting-faith">Parenting &amp; Faith <span>01</span></a></li>
+          <li><a href="#" data-filter="announcements">Announcements <span>01</span></a></li>
+        </ul>
+      </div>
+
+      <div class="widget widget-recent">
+        <h3 class="widget-title">Popular Posts</h3>
+        <ul>
+          <li>
+            <img src="dos-sarah.png" alt="">
+            <div><div class="t">Sarah's Obedience: A Companion Story to Abraham</div><div class="d">July 8, 2026</div></div>
+          </li>
+          <li>
+            <img src="Founded.png" alt="">
+            <div><div class="t">Founded for the Chosen Seed</div><div class="d">April 22, 2026</div></div>
+          </li>
+          <li>
+            <img src="dos-miriam.png" alt="">
+            <div><div class="t">Miriam: Watching Over What Matters</div><div class="d">April 3, 2026</div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="widget widget-newsletter">
+        <h3 class="widget-title">Join Our Reading Ministry</h3>
+        <p>New stories, early cover reveals, and faith &amp; parenting notes — straight to your inbox.</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-gold" style="justify-content:center">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="widget widget-about">
+        <h3 class="widget-title">About the Publisher</h3>
+        <p>Twelve Scents Publishing creates inspirational children's Bible storybooks featuring brown-skin biblical heroes. Minority-owned, Scripture-rooted, shipped from the USA.</p>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-row">
+          <span class="brand-badge" style="color:#C9A24B;">12</span>
+          <span class="brand-name" style="color:#F6F1E9;">Twelve Scents Publishing</span>
+        </div>
+        <p style="font-size:14px;line-height:1.7;color:#a99bab;margin:0 0 20px;max-width:320px;">Inspirational children's Bible storybooks featuring brown-skin heroes — building courage, faith, and belonging, one page at a time.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 2c.4 2.6 2.1 4.6 4.6 4.8v3.1c-1.7.1-3.3-.4-4.6-1.3v6.7c0 4-3.3 6.7-7 6.7a6.4 6.4 0 0 1-3.4-11.8c.5-.3 1.6-.7 2.4-.7v3.3c-.3.1-.7.2-1 .4a3.1 3.1 0 1 0 4.4 2.8V2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-h">Explore</h3>
+        <div class="footer-col">
+          <a href="index.html">Home</a>
+          <a href="index.html">Shop</a>
+          <a href="blog.html">Blog</a>
+          <a href="mailto:salessupport@twelve12scents.com">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-h">Themes</h3>
+        <div class="footer-col">
+          <a href="blog.html">Courage</a>
+          <a href="blog.html">Obedience</a>
+          <a href="blog.html">Faith</a>
+          <a href="blog.html">Forgiveness</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-h">Contact</h3>
+        <div class="footer-col">
+          <a href="mailto:salessupport@twelve12scents.com" style="word-break:break-all;">salessupport@twelve12scents.com</a>
+          <a href="tel:8882121212">888-212-1212</a>
+          <span style="display:block;font-size:14px;color:#a99bab;padding:5.5px 0;">Delaware, USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Twelve Scents Publishing. All rights reserved.</span>
+      <span>Bible stories featuring brown children · Black biblical heroes · Biblical heritage children's books</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  var toggle = document.getElementById('mobileToggle');
+  var menu = document.getElementById('mobileMenu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('open');
+    });
+  }
+
+  // Category filtering (top pill strip + sidebar list stay in sync)
+  var posts = document.querySelectorAll('article.post[data-category]');
+  var filterEls = document.querySelectorAll('[data-filter]');
+  filterEls.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var filter = el.getAttribute('data-filter');
+      filterEls.forEach(function (f) { f.classList.toggle('active', f.getAttribute('data-filter') === filter); });
+      posts.forEach(function (post) {
+        var show = filter === 'all' || post.getAttribute('data-category') === filter;
+        post.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // Newsletter (no backend — demo confirmation)
+  var form = document.getElementById('newsletterForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = form.querySelector('input[type=email]');
+      if (input && input.value) {
+        form.innerHTML = '<p style="font-size:14px;color:#5d5360;margin:0;">✓ Thank you — check your inbox to confirm your subscription.</p>';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
