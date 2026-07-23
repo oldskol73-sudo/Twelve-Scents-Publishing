@@ -123,9 +123,9 @@
         <div style="position:absolute;width:min(86%,460px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#C9A24B 0%,rgba(201,162,75,0) 66%);opacity:.3;z-index:0;"></div>
         <!-- fanned real book covers -->
         <div style="position:relative;z-index:1;width:min(62%,244px);">
-          <img src="assets/isaac-cover.png" alt="Isaac: The Promised Son — book cover" style="position:absolute;top:9%;left:-40%;width:80%;border-radius:5px;transform:rotate(-9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
-          <img src="assets/jacob-cover.png" alt="The Chosen: Jacob — book cover" style="position:absolute;top:9%;right:-40%;width:80%;border-radius:5px;transform:rotate(9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
-          <img src="assets/abraham-cover.png" alt="Abraham: The Father Who Believed God — book cover" style="position:relative;z-index:2;display:block;width:100%;border-radius:6px;box-shadow:0 42px 74px -30px rgba(11,20,40,.9);border:1px solid rgba(201,162,75,.6);">
+          <img src="isaac-cover.png" alt="Isaac: The Promised Son — book cover" style="position:absolute;top:9%;left:-40%;width:80%;border-radius:5px;transform:rotate(-9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
+          <img src="jacob-cover.png" alt="The Chosen: Jacob — book cover" style="position:absolute;top:9%;right:-40%;width:80%;border-radius:5px;transform:rotate(9deg);box-shadow:0 26px 46px -24px rgba(11,20,40,.8);border:1px solid rgba(201,162,75,.4);">
+          <img src="abraham-cover.png" alt="Abraham: The Father Who Believed God — book cover" style="position:relative;z-index:2;display:block;width:100%;border-radius:6px;box-shadow:0 42px 74px -30px rgba(11,20,40,.9);border:1px solid rgba(201,162,75,.6);">
         </div>
         <!-- library stat card -->
         <div style="position:absolute;z-index:3;left:-8px;bottom:6%;background:#fff;border-radius:4px;padding:14px 18px;box-shadow:0 16px 36px -16px rgba(44,32,48,.4);display:flex;align-items:center;gap:12px;">
@@ -291,7 +291,7 @@
     <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,7vw,84px) clamp(18px,4vw,40px);">
       <div class="hero-split" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:center;">
         <div style="position:relative;border-radius:6px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 24px 50px -28px rgba(44,32,48,.45);">
-          <video src="assets/Readingtochild.mp4" poster="assets/first-frame.jpg" autoplay loop muted playsinline preload="auto" aria-label="Reading, happy and black family with a book on the sofa, bonding together at home." style="width:100%;height:100%;object-fit:cover;"></video>
+          <video src="Readingtochild.mp4" poster="first-frame.jpg" autoplay loop muted playsinline preload="auto" aria-label="Reading, happy and black family with a book on the sofa, bonding together at home." style="width:100%;height:100%;object-fit:cover;"></video>
         </div>
         <div>
           <div style="font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;margin-bottom:14px;">What we offer</div>
@@ -356,7 +356,7 @@
   <section style="background:#2C2030;color:#F6F1E9;">
     <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,7vw,90px) clamp(18px,4vw,40px);">
       <div style="position:relative;border-radius:8px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.65);background:#1a1320;margin-bottom:clamp(32px,5vw,52px);">
-        <img src="assets/Founded.png" alt="Founded for the chosen seed to meet their historical heroes who look like them — a family reading the Holy Bible together" style="display:block;width:100%;height:auto;">
+        <img src="Founded.png" alt="Founded for the chosen seed to meet their historical heroes who look like them — a family reading the Holy Bible together" style="display:block;width:100%;height:auto;">
       </div>
       <div style="max-width:820px;margin:0 auto;text-align:center;">
         <div style="font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#C9A24B;margin-bottom:16px;">Our story</div>
@@ -411,7 +411,7 @@ We are brown-skin owned and Scripture rooted. The heroes of the Bible were never
                 background:#1a110b;
                 box-shadow:0 24px 50px -28px rgba(44,32,48,.45);">
 
-      <img src="assets/OurStory.png"
+      <img src="OurStory.png"
            alt="The shelves were empty. We are filling them with The Truth!"
            style="display:block;
                   width:100%;
@@ -897,19 +897,19 @@ class Component extends DCLogic {
 
   books() {
     return [
-      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', skey: 'mmov', num: 1, total: 48, series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'assets/abraham-cover.png', coverRatio: '2 / 3', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
-      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', skey: 'mmov', num: 2, total: 48, series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: 'assets/isaac-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
-      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', skey: 'mmov', num: 3, total: 48, series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: 'assets/jacob-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
+      { id: 'b1', title: "Abraham: The Father Who Believed God", short: 'Abraham', skey: 'mmov', num: 1, total: 48, series: 'Fathers of Faith', theme: 'Faith', age: 'Ages 4–7', price: 9.99, cover: ['#0b1428', '#060d1a'], accent: '#C9A24B', coverImg: 'abraham-cover.png', coverRatio: '2 / 3', status: 'presale', scripture: 'Genesis 12–22', amazon: 'https://www.amazon.com', blurb: "Book 1 of 48. God spoke to one brown-skin man in the land of Ur — and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever." },
+      { id: 'b2', title: "Isaac: The Promised Son", short: 'Isaac', skey: 'mmov', num: 2, total: 48, series: 'Fathers of Faith', theme: 'Obedience', age: 'Ages 4–7', price: 9.99, cover: ['#12303a', '#0a1c24'], accent: '#E6B655', coverImg: 'isaac-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 21–27', amazon: '', blurb: "Book 2 of 48. The son God promised in Abraham's old age — Isaac trusted God's timing and walked in quiet strength." },
+      { id: 'b3', title: "The Chosen: Jacob", short: 'Jacob', skey: 'mmov', num: 3, total: 48, series: 'Fathers of Faith', theme: 'Perseverance', age: 'Ages 4–7', price: 9.99, cover: ['#241a2c', '#150f19'], accent: '#F0C975', coverImg: 'jacob-cover.png', coverRatio: '2 / 3', status: 'soon', scripture: 'Genesis 25–35', amazon: '', blurb: "Book 3 of 48. The man who wrestled with God and would not let go until he was blessed — and was given a new name: Israel." },
     ];
   }
 
   dosBooks() {
     return [
-      { id: 'd1', title: "Sarah: The Mother of Nations Who Called Him Lord", short: 'Sarah', skey: 'dos', num: 1, total: 18, subtitle: 'The Mother of Nations Who Called Him Lord', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#2a1810', '#150b06'], accent: '#E6B655', coverImg: 'assets/dos-sarah.png', coverRatio: '163 / 279', status: 'presale', scripture: 'Genesis 12–23 · 1 Peter 3:5–6', amazon: 'https://www.amazon.com', blurb: "The companion to Abraham begins here. Sarah left Ur at his side, waited a lifetime for the child of promise, and laughed when God turned the impossible into Isaac. Scripture holds up her faith and quiet reverence as the pattern for every daughter who trusts God — the mother of nations, and the first of the Daughters of Sarah." },
-      { id: 'd2', title: "Rebekah: The Bride Who Went Without Delay", short: 'Rebekah', skey: 'dos', num: 2, total: 18, subtitle: 'The Bride Who Went Without Delay', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#241a12', '#120c08'], accent: '#E6B655', coverImg: 'assets/dos-rebekah.png', coverRatio: '1086 / 1448', status: 'soon', scripture: 'Genesis 24', amazon: '', blurb: "Book 2 of the Daughters of Sarah. When God's servant called, Rebekah answered 'I will go' — and became the bride of promise without delay." },
-      { id: 'd3', title: "Miriam: The Sister Who Watched and Sang", short: 'Miriam', skey: 'dos', num: 3, total: 18, subtitle: 'The Sister Who Watched and Sang', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#1f1a14', '#100c08'], accent: '#E6B655', coverImg: 'assets/dos-miriam.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2, 15', amazon: '', blurb: "Book 3 of the Daughters of Sarah. She watched over her baby brother by the river and later led the women in song by the sea." },
-      { id: 'd4', title: "Jochebed: The Mother Who Hid Him in Faith", short: 'Jochebed', skey: 'dos', num: 4, total: 18, subtitle: 'The Mother Who Hid Him in Faith', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#261c12', '#130d07'], accent: '#E6B655', coverImg: 'assets/dos-jochebed.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2', amazon: '', blurb: "Book 4 of the Daughters of Sarah. She hid her son in faith and trusted God with the deliverer of Israel." },
-      { id: 'd5', title: "Hannah: The Mother Who Prayed and Let Him Go", short: 'Hannah', skey: 'dos', num: 5, total: 18, subtitle: 'The Mother Who Prayed and Let Him Go', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#221812', '#110b07'], accent: '#E6B655', coverImg: 'assets/dos-hannah.png', coverRatio: '163 / 279', status: 'soon', scripture: '1 Samuel 1–2', amazon: '', blurb: "Book 5 of the Daughters of Sarah. She poured out her heart to God, and when He answered, she gave her son back to Him." },
+      { id: 'd1', title: "Sarah: The Mother of Nations Who Called Him Lord", short: 'Sarah', skey: 'dos', num: 1, total: 18, subtitle: 'The Mother of Nations Who Called Him Lord', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#2a1810', '#150b06'], accent: '#E6B655', coverImg: 'dos-sarah.png', coverRatio: '163 / 279', status: 'presale', scripture: 'Genesis 12–23 · 1 Peter 3:5–6', amazon: 'https://www.amazon.com', blurb: "The companion to Abraham begins here. Sarah left Ur at his side, waited a lifetime for the child of promise, and laughed when God turned the impossible into Isaac. Scripture holds up her faith and quiet reverence as the pattern for every daughter who trusts God — the mother of nations, and the first of the Daughters of Sarah." },
+      { id: 'd2', title: "Rebekah: The Bride Who Went Without Delay", short: 'Rebekah', skey: 'dos', num: 2, total: 18, subtitle: 'The Bride Who Went Without Delay', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#241a12', '#120c08'], accent: '#E6B655', coverImg: 'dos-rebekah.png', coverRatio: '1086 / 1448', status: 'soon', scripture: 'Genesis 24', amazon: '', blurb: "Book 2 of the Daughters of Sarah. When God's servant called, Rebekah answered 'I will go' — and became the bride of promise without delay." },
+      { id: 'd3', title: "Miriam: The Sister Who Watched and Sang", short: 'Miriam', skey: 'dos', num: 3, total: 18, subtitle: 'The Sister Who Watched and Sang', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#1f1a14', '#100c08'], accent: '#E6B655', coverImg: 'dos-miriam.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2, 15', amazon: '', blurb: "Book 3 of the Daughters of Sarah. She watched over her baby brother by the river and later led the women in song by the sea." },
+      { id: 'd4', title: "Jochebed: The Mother Who Hid Him in Faith", short: 'Jochebed', skey: 'dos', num: 4, total: 18, subtitle: 'The Mother Who Hid Him in Faith', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#261c12', '#130d07'], accent: '#E6B655', coverImg: 'dos-jochebed.png', coverRatio: '163 / 279', status: 'soon', scripture: 'Exodus 2', amazon: '', blurb: "Book 4 of the Daughters of Sarah. She hid her son in faith and trusted God with the deliverer of Israel." },
+      { id: 'd5', title: "Hannah: The Mother Who Prayed and Let Him Go", short: 'Hannah', skey: 'dos', num: 5, total: 18, subtitle: 'The Mother Who Prayed and Let Him Go', series: 'Daughters of Sarah', age: 'Ages 7–10', price: 9.99, cover: ['#221812', '#110b07'], accent: '#E6B655', coverImg: 'dos-hannah.png', coverRatio: '163 / 279', status: 'soon', scripture: '1 Samuel 1–2', amazon: '', blurb: "Book 5 of the Daughters of Sarah. She poured out her heart to God, and when He answered, she gave her son back to Him." },
     ];
   }
 
@@ -1105,11 +1105,11 @@ class Component extends DCLogic {
     };
     // ---- Look Inside flip-through (Abraham interior spreads) ----
     const lookSpreads = [
-      { img: 'assets/abraham-cover.png', label: 'The Cover', ref: 'Book 1 of 48' },
-      { img: 'assets/look-1.png', label: 'The Hero Portrait',  ref: 'Genesis 15:6' },
-      { img: 'assets/look-2.png', label: 'The Call to Leave',  ref: 'Genesis 12:1–4' },
-      { img: 'assets/look-3.png', label: 'The Test of Faith',  ref: 'Genesis 22:1–6' },
-      { img: 'assets/look-4.png', label: 'The Promise Renewed', ref: 'Genesis 22:15–17' },
+      { img: 'abraham-cover.png', label: 'The Cover', ref: 'Book 1 of 48' },
+      { img: 'look-1.png', label: 'The Hero Portrait',  ref: 'Genesis 15:6' },
+      { img: 'look-2.png', label: 'The Call to Leave',  ref: 'Genesis 12:1–4' },
+      { img: 'look-3.png', label: 'The Test of Faith',  ref: 'Genesis 22:1–6' },
+      { img: 'look-4.png', label: 'The Promise Renewed', ref: 'Genesis 22:15–17' },
     ];
     const lookN = lookSpreads.length;
     const li = ((s.lookIdx % lookN) + lookN) % lookN;
@@ -1127,12 +1127,12 @@ class Component extends DCLogic {
 
     // ---- Look Inside flip-through (Sarah interior illustrations) ----
     const sarahSpreads = [
-      { img: 'assets/sarah-cover-front.png', label: 'The Cover', ref: 'Book 1 of 18' },
-      { img: 'assets/sarah-look-1.png', label: 'The World',           ref: 'Pages 1–2' },
-      { img: 'assets/sarah-look-2.png', label: 'The Woman',           ref: 'Pages 3–4' },
-      { img: 'assets/sarah-look-3.png', label: 'The Need',            ref: 'Pages 5–6' },
-      { img: 'assets/sarah-look-4.png', label: 'The Discretion',      ref: 'Pages 7–8' },
-      { img: 'assets/sarah-look-5.png', label: 'The Trial, Part One', ref: 'Pages 9–10' },
+      { img: 'sarah-cover-front.png', label: 'The Cover', ref: 'Book 1 of 18' },
+      { img: 'sarah-look-1.png', label: 'The World',           ref: 'Pages 1–2' },
+      { img: 'sarah-look-2.png', label: 'The Woman',           ref: 'Pages 3–4' },
+      { img: 'sarah-look-3.png', label: 'The Need',            ref: 'Pages 5–6' },
+      { img: 'sarah-look-4.png', label: 'The Discretion',      ref: 'Pages 7–8' },
+      { img: 'sarah-look-5.png', label: 'The Trial, Part One', ref: 'Pages 9–10' },
     ];
     const sLookN = sarahSpreads.length;
     const sli = ((s.sarahLookIdx % sLookN) + sLookN) % sLookN;
@@ -1181,7 +1181,7 @@ class Component extends DCLogic {
       featScripture: featured.scripture,
       featAge: featured.age,
       heroCoverStyle,
-      collageImg: 'assets/abraham-collage.png',
+      collageImg: 'abraham-collage.png',
       lookImg: lookCur.img,
       lookAlt: lookCur.label + ' — Abraham interior spread',
       lookCaption: lookCur.label + ' · ' + lookCur.ref,
