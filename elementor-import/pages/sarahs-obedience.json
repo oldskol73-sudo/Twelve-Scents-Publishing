@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "a02e357",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "3bd6723",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>\u2726 New Companion Series</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "c9381b7",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Sarah's Obedience: A Companion Story to Abraham",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d47299c",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Sarah's faith is often told in Abraham's shadow. This companion series gives her the front cover \u2014 and the whole story \u2014 she deserves.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "f566d4f",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 July 8, 2026 \u00b7 3 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "934b36b",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/sarah-cover-front.png",
+              "id": ""
+            },
+            "image_alt": "Cover illustration of Sarah, mother of nations who called Abraham lord"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "cbefe7d",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "58d90d2",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Ask most children to describe Abraham's story and they'll tell you about a journey, a promise, a son. Ask them about Sarah, and the answers get thinner \u2014 usually just \"his wife.\" We wanted to change that math. Sarah's obedience is not a footnote to Abraham's faith; it is a matching, standalone act of trust, and it deserves a cover with her name on it.</p><p>This companion book follows Sarah from the same tents in Ur to the same unfamiliar land, but through her eyes \u2014 the waiting, the doubt, the laughter when the promise finally arrived in the form of a son named Isaac, whose very name means \"he laughs.\"</p><h2>A mother of nations, not a background character</h2><p>Illustrating Sarah meant resisting the urge to soften her into decoration. She is drawn as a woman fully present in her own story: weathered by years of waiting, sharp-eyed, capable, and \u2014 in the pages where the promise finally lands \u2014 radiantly amused at how God had kept His word all along.</p><p>We leaned on the same historical and geographic research used for Abraham, making sure her clothing, setting, and features reflect the region and era she actually lived in, not a generic biblical \"costume.\"</p><blockquote>\"Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well.\"<br><small>1 Peter 3:6 \u00b7 KJV 1611</small></blockquote><h2>Why companion books matter</h2><p>Every hero in Scripture had someone standing beside them, often carrying just as much weight in silence. Our companion series \u2014 starting here with Sarah \u2014 exists so that the daughters reading these books get to see themselves as co-authors of the promise, not just witnesses to someone else's.</p><p>Sarah's book releases alongside Abraham's, designed to be read together or on their own. Either way, she gets top billing on her own cover \u2014 finally.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "bde211d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Matriarchs</a> <a href='blog.html'>Faith</a> <a href='blog.html'>Genesis</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "ed54483",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "d3871d6",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "581414b",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Meet Abraham: The Father Who Believed God",
+                "link": {
+                  "url": "meet-abraham.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "98fa87b",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah \u2192",
+                "link": {
+                  "url": "daughters-of-scripture.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Sarah's Obedience: A Companion Story to Abraham",
+  "type": "page"
+}

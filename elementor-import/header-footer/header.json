@@ -1,0 +1,191 @@
+{
+  "content": [
+    {
+      "id": "14427fd",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "rgba(246,241,233,.9)",
+        "sticky": "top"
+      },
+      "elements": [
+        {
+          "id": "6395391",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "089dc3a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row"
+              },
+              "elements": [
+                {
+                  "id": "e80458c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='width:40px;height:40px;border-radius:50%;border:1.5px solid #C9A24B;display:inline-flex;align-items:center;justify-content:center;color:#9A7B2E;font-family:Cormorant Garamond,serif;font-size:20px;font-weight:700;'>12</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9fc34e9",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:23px;font-weight:600;'>Twelve&nbsp;Scents<br><small style='font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#9A7B2E;'>Publishing</small></span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "3750028",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "eda4f07",
+                    "text": "Home",
+                    "link": {
+                      "url": "/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "9d5beb7",
+                    "text": "About",
+                    "link": {
+                      "url": "/about",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "a085267",
+                    "text": "Shop",
+                    "link": {
+                      "url": "/shop",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "1ddb0f9",
+                    "text": "Listings",
+                    "link": {
+                      "url": "/listings",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "6b79f52",
+                    "text": "Blog",
+                    "link": {
+                      "url": "/blog",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "fc07362",
+                    "text": "Contact",
+                    "link": {
+                      "url": "/contact",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "view": "inline"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "5decb5e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Contact Us",
+                "link": {
+                  "url": "/contact",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "e0a858e",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-shopping-cart",
+                  "library": "fa-solid"
+                },
+                "__dynamic__": {},
+                "_element_id": "cart-icon"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "1c1555a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='font-size:11px;color:#888;'>NOTE: cart icon is decorative in this static export \u2014 the source mockup drove a live cart-count badge and slide-out drawer via custom JS. Requires a real cart/e-commerce plugin (e.g. WooCommerce) to be functional; otherwise leave as a static icon linking to the Shop page.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Site Header",
+  "type": "section"
+}

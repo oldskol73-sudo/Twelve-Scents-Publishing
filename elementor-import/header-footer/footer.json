@@ -1,0 +1,346 @@
+{
+  "content": [
+    {
+      "id": "015b37f",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#241A28"
+      },
+      "elements": [
+        {
+          "id": "9d482c8",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "535a7d6",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "089dc3a",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "e80458c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='width:40px;height:40px;border-radius:50%;border:1.5px solid #C9A24B;display:inline-flex;align-items:center;justify-content:center;color:#9A7B2E;font-family:Cormorant Garamond,serif;font-size:20px;font-weight:700;'>12</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "9fc34e9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:23px;font-weight:600;'>Twelve&nbsp;Scents<br><small style='font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#9A7B2E;'>Publishing</small></span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "81ff662",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='color:#a99bab;'>Inspirational children's Bible storybooks featuring brown-skin heroes \u2014 building courage, faith, and belonging, one page at a time.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "830a58a",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "_id": "82dd38e",
+                        "text": "Instagram",
+                        "link": {
+                          "url": "https://www.instagram.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "30eb92d",
+                        "text": "Facebook",
+                        "link": {
+                          "url": "https://www.facebook.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "a8f52ee",
+                        "text": "TikTok",
+                        "link": {
+                          "url": "https://www.tiktok.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      }
+                    ]
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "a452d67",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "aa6a3cb",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Explore",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "659582f",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "_id": "85dd013",
+                        "text": "Home",
+                        "link": {
+                          "url": "/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "342c969",
+                        "text": "About",
+                        "link": {
+                          "url": "/about",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "7ab3a0e",
+                        "text": "Shop",
+                        "link": {
+                          "url": "/shop",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "18387f1",
+                        "text": "Listings",
+                        "link": {
+                          "url": "/listings",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "5220102",
+                        "text": "Contact",
+                        "link": {
+                          "url": "/contact",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      }
+                    ]
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "07afc43",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "b548eab",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Series",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "27dc986",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "_id": "0b89b7b",
+                        "text": "Mighty Men of Valor",
+                        "link": {
+                          "url": "/listings",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "ccb110d",
+                        "text": "Daughters of Sarah",
+                        "link": {
+                          "url": "/listings",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      }
+                    ]
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "a79cd74",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "ab7402d",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Contact",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6992d20",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><a href='mailto:salessupport@twelve12scents.com'>salessupport@twelve12scents.com</a><br><a href='tel:8882121212'>888-212-1212</a><br>Delaware, USA</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "e548886",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "68759f3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>&copy; 2026 Twelve Scents Publishing. All rights reserved.</p>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "7be32c6",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Bible stories featuring brown children &middot; Black biblical heroes &middot; Biblical heritage children's books</p>"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Site Footer",
+  "type": "section"
+}

@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "cf41e52",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "1937ca0",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Parenting & Faith</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "d5d3f84",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Reading the Word Together: A Family Devotional Guide",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8a45055",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Five simple questions to ask after storytime that turn a picture book into a real conversation about faith.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8fa8309",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 May 19, 2026 \u00b7 4 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a51031b",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/first-frame.jpg",
+              "id": ""
+            },
+            "image_alt": "A parent reading a Bible storybook aloud to their child on the sofa"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e92d922",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "0ccc0cf",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>We hear it often from parents: \"My child loves the pictures, but I want the story to stick with them past bedtime.\" That's the exact gap a devotional conversation is built to close. A storybook plants the seed. A few honest questions afterward are what help it take root.</p><p>You don't need a curriculum or a lesson plan. You need about five minutes, a comfortable spot on the couch, and permission to let your child's answers surprise you.</p><h2>Five questions to ask after any Twelve Scents story</h2><p>These work after Abraham, after Sarah, after any hero in the collection \u2014 swap in the character's name and let the conversation go wherever your child takes it.</p><p><strong>1. What was the hardest part for [hero] to do?</strong> This teaches children to notice obedience as a choice, not a given.<br><strong>2. Was [hero] scared? How do you know?</strong> Faith and fear are allowed to coexist \u2014 that's a lesson worth naming out loud.<br><strong>3. What would you have done?</strong> Let them sit in the tension honestly, even if their answer isn't the \"right\" one.<br><strong>4. Who helped [hero] along the way?</strong> No hero in Scripture walks alone, and neither does your child.<br><strong>5. What's one thing you want to remember from this story tomorrow?</strong> This turns a bedtime book into something they carry into the next day.</p><blockquote>\"And these words, which I command thee this day, shall be in thine heart: and thou shalt teach them diligently unto thy children.\"<br><small>Deuteronomy 6:6\u20137 \u00b7 KJV 1611</small></blockquote><h2>Consistency matters more than perfection</h2><p>You will not get through all five questions every night. Some nights you'll get one, mumbled, half-asleep. That's fine. The goal isn't a flawless devotional routine \u2014 it's a habit of turning toward Scripture together often enough that your child starts turning toward it on their own.</p><p>Every Twelve Scents storybook is written with this exact conversation in mind \u2014 which is part of why we treat these covers as more than picture books. They're an invitation into your family's own reading ministry.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "e7ccc1b",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Parenting & Faith</a> <a href='blog.html'>Devotional</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "983dc54",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "fa6a731",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "43c0590",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Why We Chose the 1611 King James Bible as Our Foundation",
+                "link": {
+                  "url": "why-1611-kjv.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "7958af6",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Introducing Men of Valor: Our Full Patriarchs Series \u2192",
+                "link": {
+                  "url": "men-of-valor.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Reading the Word Together: A Family Devotional Guide",
+  "type": "page"
+}

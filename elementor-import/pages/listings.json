@@ -1,0 +1,730 @@
+{
+  "content": [
+    {
+      "id": "6831eff",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "43c0a8d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>Browse listings</div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a5baa9e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Single books & series",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "103fcef",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Browse by series &mdash; from <em>The Mighty Men of Valor</em> to the <em>Daughters of Sarah</em>. Every book rooted in the 1611 King James Bible.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "e034ca3",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "95b8ecc",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "All Series",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "23f12a0",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Mighty Men of Valor",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "6889ad9",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Daughters of Sarah",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "4c7119b",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "1191b74",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "3fa7862",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "c276fa9",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Abraham: The Father Who Believed God"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "04be0ff",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Mighty Men of Valor</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 1 of 48</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "547e6e9",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Genesis 12\u201322 \u00b7 Ages 4\u20137</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e715f14",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Abraham",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3bb8ad4",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Book 1 of 48. God spoke to one brown-skin man in the land of Ur \u2014 and he obeyed.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e4e5540",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "ededd3f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "205f597",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-Order",
+                        "link": {
+                          "url": "#contact",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "058a026",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "91c6501",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/isaac-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Isaac: The Promised Son"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "eb0bc1e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Mighty Men of Valor</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 2 of 48</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b2087b1",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Genesis 21\u201327 \u00b7 Ages 4\u20137</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ac43d47",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Isaac",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1fe78fc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Book 2 of 48. The son God promised in Abraham's old age \u2014 Isaac trusted God's timing.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "236cff1",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "31722b8",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "d26a262",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Coming Soon</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "af98ca7",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "6475ea4",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/jacob-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "The Chosen: Jacob"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "4ed8b32",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Mighty Men of Valor</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 3 of 48</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "0e18346",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Genesis 25\u201335 \u00b7 Ages 4\u20137</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e0be6c0",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Jacob",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "65ee397",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Book 3 of 48. The man who wrestled with God and would not let go until he was blessed.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "2d1db5b",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "b944c9d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "2deef90",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Coming Soon</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "83b6ac7",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "4dffdeb",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "785bc92",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/dos-sarah.png",
+                      "id": ""
+                    },
+                    "image_alt": "Sarah: The Mother of Nations Who Called Him Lord"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "56e4a3e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Daughters of Sarah</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 1 of 18</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "65199b6",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Genesis 12\u201323 \u00b7 Ages 7\u201310</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1918200",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sarah",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "5a167b1",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>The companion to Abraham begins here. Sarah waited a lifetime for the child of promise.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "aa57989",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "0f8b95c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "8040595",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-Order",
+                        "link": {
+                          "url": "#contact",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "39e3600",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "01ed64f",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/dos-rebekah.png",
+                      "id": ""
+                    },
+                    "image_alt": "Rebekah: The Bride Who Went Without Delay"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "8994e10",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Daughters of Sarah</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 2 of 18</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "946b82a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Genesis 24 \u00b7 Ages 7\u201310</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "8391b58",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Rebekah",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "f6621be",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>When God's servant called, Rebekah answered 'I will go' \u2014 and became the bride of promise without delay.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "eb6de42",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "67cfaa7",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "57943ed",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Coming Soon</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "5250083",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "b330782",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/dos-miriam.png",
+                      "id": ""
+                    },
+                    "image_alt": "Miriam: The Sister Who Watched and Sang"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "d892b81",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#C9A24B;padding:4px 9px;border-radius:2px;font-size:10px;text-transform:uppercase;'>Daughters of Sarah</span> <span style='font-size:10px;text-transform:uppercase;color:#8a7f8d;'>Book 3 of 18</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "240030b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:11px;text-transform:uppercase;color:#9A7B2E;'>Exodus 2, 15 \u00b7 Ages 7\u201310</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "65282c9",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Miriam",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "516722d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>She watched over her baby brother by the river and later led the women in song by the sea.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "223a78b",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "5a8fdaa",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style='font-family:Cormorant Garamond,serif;font-size:24px;font-weight:700;'>$9.99</span>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "7473c66",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Coming Soon</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Listings",
+  "type": "page"
+}

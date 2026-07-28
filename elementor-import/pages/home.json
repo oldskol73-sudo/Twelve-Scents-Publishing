@@ -1,0 +1,1059 @@
+{
+  "content": [
+    {
+      "id": "4cb0f05",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "21502ee",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "6ac4d37",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "4edd74e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='background:#EEE3CF;color:#9A7B2E;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:8px 14px;border-radius:999px;display:inline-block;'>Faith-rooted &middot; Black-owned</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b7ed9bc",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Bible stories where brown children are the heroes.",
+                    "header_size": "h1"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "5ab151f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Inspirational picture books that help your child grow in courage, obedience, faith, and forgiveness &mdash; and see themselves in scripture on every single page.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "737d49a",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "15fdb63",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Shop the Books",
+                        "link": {
+                          "url": "#shop",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "3eed9bf",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Our Story",
+                        "link": {
+                          "url": "#about",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "bd5dc95",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "376d69e",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Abraham: The Father Who Believed God \u2014 book cover"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ce20412",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/isaac-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Isaac: The Promised Son \u2014 book cover"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e1ab2b6",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/jacob-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "The Chosen: Jacob \u2014 book cover"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "841253a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='background:#fff;border-radius:4px;padding:14px 18px;'><span style='font-family:Cormorant Garamond,serif;font-size:34px;font-weight:700;color:#9A7B2E;'>48</span> Books across 11 series</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "08aade1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "f96f686",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "dc9a8b1",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "a574307",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='color:#e7c36a;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;'>&#9733; Featured &middot; Pre-Sale</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "bd8d0ed",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#c9a24b;'>Series 1 &mdash; Fathers of Faith &middot; Book 1 of 48</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "96e6a03",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Abraham",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9d5f190",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-family:Cormorant Garamond,serif;font-weight:600;font-size:26px;color:#f3e9d2;text-transform:uppercase;'>The Father Who Believed God</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ec1d373",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<blockquote>&ldquo;And he believed in the LORD; and he counted it to him for righteousness.&rdquo;<br><small>&mdash; Genesis 15:6 &middot; KJV 1611</small></blockquote>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "d1dac08",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Book 1 of 48. God spoke to one brown-skin man in the land of Ur &mdash; and he obeyed. No map, no destination, only the word of God and a first step that changed the world forever.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "2653463",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Ages 4&ndash;7</span> <span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Genesis 12&ndash;22</span> <span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Fully Illustrated</span></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "44a766f",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "633fb74",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-Order \u2014 $9.99",
+                        "link": {
+                          "url": "#shop",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "1004d80",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-order on Amazon",
+                        "link": {
+                          "url": "https://www.amazon.com",
+                          "is_external": "true",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "3db2029",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><em>Flip through the cover and interior pages at right &middot; ships with the first print run.</em></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "ae63a3d",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "21706f5",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "The Cover \u2014 Abraham interior spread"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ea9cf19",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='text-align:center;'>Look inside &middot; The Cover &middot; Book 1 of 48</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "57380ba",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='text-align:center;font-size:12px;color:#888;'>NOTE: 5 interior spreads (abraham-cover.png, look-1.png &ndash; look-4.png) with prev/next flip-through were JS-driven in the source (sc-for lookDots). Static Elementor version shows the cover image only; consider an image-carousel widget with all 5 images if a flip-through is desired.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "01330d3",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "f3bab4a",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "089bdeb",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "54b3578",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='color:#e7c36a;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;'>&#10022; New Companion Series &middot; Pre-Sale</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "0ca0f3d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#c9a24b;'>Daughters of Sarah &middot; Book 1 of 18 &middot; Mothers of the Covenant</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "c71e8d3",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sarah",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9f2d5fc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-family:Cormorant Garamond,serif;font-weight:600;font-size:24px;color:#f3e9d2;text-transform:uppercase;'>The Mother of Nations Who Called Him Lord</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "c83038f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<blockquote>&ldquo;Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well.&rdquo;<br><small>&mdash; 1 Peter 3:6 &middot; KJV 1611</small></blockquote>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9491128",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>The companion to Abraham begins here. Sarah left Ur at his side, waited a lifetime for the child of promise, and laughed when God turned the impossible into Isaac. Scripture holds up her faith and quiet reverence as the pattern for every daughter who trusts God &mdash; the mother of nations, and the first of the Daughters of Sarah.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "8b95c92",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Ages 7&ndash;10</span> <span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Genesis 12&ndash;23 &middot; 1 Peter 3:5&ndash;6</span> <span style='border:1px solid #c9a24b;border-radius:999px;padding:6px 13px;font-size:12px;'>Fully Illustrated</span></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3cf5492",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row"
+                  },
+                  "elements": [
+                    {
+                      "id": "a380530",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-Order \u2014 $9.99",
+                        "link": {
+                          "url": "#shop",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    },
+                    {
+                      "id": "f9c2a26",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Pre-order on Amazon",
+                        "link": {
+                          "url": "https://www.amazon.com",
+                          "is_external": "true",
+                          "nofollow": ""
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "31df8d2",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><em>Flip through the cover and interior pages at right &middot; ships with the first print run.</em></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "6e1deda",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "84a5f08",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/sarah-cover-front.png",
+                      "id": ""
+                    },
+                    "image_alt": "The Cover \u2014 Sarah interior illustration"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3e05a7d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='text-align:center;'>Look inside &middot; The Cover &middot; Book 1 of 18</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1070887",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='text-align:center;font-size:12px;color:#888;'>NOTE: 6 interior illustrations (sarah-cover-front.png, sarah-look-1.png &ndash; sarah-look-5.png) with prev/next flip-through were JS-driven in the source. Consider an image-carousel widget with all 6 images.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "b933c9e",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#2C2030"
+      },
+      "elements": [
+        {
+          "id": "9d7750e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>&#9733;&#9733;&#9733;&#9733;&#9733; Loved by faith-filled families &nbsp;/&nbsp; Ages 4&ndash;17 &nbsp;/&nbsp; Minority-owned publisher &nbsp;/&nbsp; Ships from USA</p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "17fd43f",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "9ba547e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>Why parents choose us</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8366c56",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Stories that build character & belonging",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "02c7a1b",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "e1614ff",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "They see themselves",
+                "description_text": "Brown-skin biblical heroes on every page, so faith feels personal, true, and theirs.",
+                "selected_icon": {
+                  "value": "fas fa-user-friends",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "48dbd3c",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "Lessons that last",
+                "description_text": "Each story is built around courage, obedience, forgiveness, faith, and biblical heritage.",
+                "selected_icon": {
+                  "value": "fas fa-star",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "668ca46",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "Made for storytime",
+                "description_text": "Warm, read-aloud language and rich art crafted for little hands and big questions.",
+                "selected_icon": {
+                  "value": "fas fa-book-open",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a07bb8a",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F0E7D8"
+      },
+      "elements": [
+        {
+          "id": "8566a6a",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "e55a50f",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "7725a97",
+                  "elType": "widget",
+                  "widgetType": "video",
+                  "settings": {
+                    "video_type": "hosted",
+                    "hosted_url": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/Readingtochild.mp4",
+                      "id": ""
+                    },
+                    "hosted_cover": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/first-frame.jpg",
+                      "id": ""
+                    },
+                    "autoplay": "yes",
+                    "mute": "yes",
+                    "loop": "yes"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "cd61ac7",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "c6e4587",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>What we offer</div>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "831963c",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "More than books \u2014 a whole reading ministry",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ff90e9a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>01 Single Picture Books</strong><br>Standalone stories, perfect for bedtime and first libraries.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "efce006",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>02 Series &amp; Box Sets</strong><br>Collectible sets that grow your child's faith library over time.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9b691a8",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>03 Schools &amp; Churches</strong><br>Bulk orders and classroom sets for students and beyond.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3f5cd8c",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore the collection",
+                    "link": {
+                      "url": "#shop",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "eac995c",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "21f0e98",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>Loved by families</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "08be2f6",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "What parents & grandparents say",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "26fe05c",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "f411ff3",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "\u201cFor the first time my grandson pointed at a hero and said, 'He looks like me.' I cried right there at bedtime.\u201d",
+                "testimonial_name": "Rena W.",
+                "testimonial_job": "Grandmother of 3",
+                "testimonial_image": {
+                  "url": "",
+                  "id": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "4fa4768",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "\u201cThe lessons on obedience and courage gave us real language to talk about faith with our girls. Beautifully done.\u201d",
+                "testimonial_name": "Marcus & Joy",
+                "testimonial_job": "Parents, Atlanta",
+                "testimonial_image": {
+                  "url": "",
+                  "id": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "069b696",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "\u201cWe use the box set in our Sunday school. The children are engaged and the art is stunning. Ordering more.\u201d",
+                "testimonial_name": "Pastor Tasha",
+                "testimonial_job": "Children's Ministry",
+                "testimonial_image": {
+                  "url": "",
+                  "id": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "15021ba",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#2C2030"
+      },
+      "elements": [
+        {
+          "id": "d6ed949",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/Founded.png",
+              "id": ""
+            },
+            "image_alt": "Founded for the chosen seed to meet their historical heroes who look like them \u2014 a family reading the Holy Bible together"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "84b9543",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#C9A24B;'>Our story</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "047bba9",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Founded for the Chosen Seed to meet their historical heroes who look like them.",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "19a887b",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Twelve Scents Publishing exists because the Bible heroes were brown-skinned men and women&mdash;and for too long, our children have not seen them as they were. We did not set out to offer representation. We set out to restore the Record. The 1611 King James Bible stands as our foundation. Every hero in this series is drawn from its pages, depicted according to the lands they walked and the lineage they carried. These are not stories. This is Scripture&mdash;the covenant inheritance of children who descend from the very lands where God spoke, where prophets walked, where the Messiah was born. We publish for the diaspora because the diaspora carries the seed.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "e9a0c76",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Each book is crafted to build character: courage, obedience, faith, forgiveness. Not through sentiment, but through the weight of truth. Not through apology, but through the authority of the Word. We write for brown children because brown children deserve to meet Abraham, Moses, David, and Deborah as they were&mdash;heroes who looked like them, obeyed a God who called them, and left a legacy that endures. The shelves were empty. We are filling it with the truth!</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "c21bc04",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "More about us",
+            "link": {
+              "url": "#about",
+              "is_external": "",
+              "nofollow": ""
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "028cd8f",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "042c2ef",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Start your child's faith library today.",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "2ebd957",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>Give the children you love stories that build courage and belonging &mdash; one beautiful page at a time.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "750cdc8",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "1a45b30",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Shop the Books",
+                "link": {
+                  "url": "#shop",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "2b6f209",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Get in Touch",
+                "link": {
+                  "url": "#contact",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Home",
+  "type": "page"
+}

@@ -1,0 +1,207 @@
+{
+  "content": [
+    {
+      "id": "efc5011",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F0E7D8"
+      },
+      "elements": [
+        {
+          "id": "915f3c7",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>Get in touch</div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "e494620",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "We'd love to hear from you",
+            "header_size": "h1",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "cfcfa9d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>Questions about a book, a bulk order for your school or church, or a partnership? Send us a note and we'll reply within one business day.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2a088bb",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "6f7a4d8",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "daa8783",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "6d5d17e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Send a message",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "748dea1",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><em>NOTE: This form is built with the WPForms plugin, not native Elementor widgets. Embed the WPForms shortcode/block here (Elementor's WPForms widget or a Shortcode widget referencing the form ID). See elementor-import/wpforms/contact-form-spec.md for the exact field list to build in WPForms.</em></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "a30a516",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "edd6833",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>Email us</strong><br><a href='mailto:salessupport@twelve12scents.com'>salessupport@twelve12scents.com</a></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6eea85c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>Call us</strong><br><a href='tel:8882121212'>888-212-1212</a></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "fe80650",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>Based in</strong><br>Delaware, USA</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ee284a8",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><em>NOTE: source mockup embeds a Google Maps iframe of Delaware, USA (google.com/maps?q=Delaware,USA&output=embed). Add via Elementor's Google Maps widget pointed at 'Delaware, USA'.</em></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "df8aa78",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "_id": "9ce7892",
+                        "text": "Instagram",
+                        "link": {
+                          "url": "https://www.instagram.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "b5636aa",
+                        "text": "Facebook",
+                        "link": {
+                          "url": "https://www.facebook.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      },
+                      {
+                        "_id": "c449e39",
+                        "text": "TikTok",
+                        "link": {
+                          "url": "https://www.tiktok.com/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-chevron-right",
+                          "library": "fa-solid"
+                        }
+                      }
+                    ]
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Contact",
+  "type": "page"
+}

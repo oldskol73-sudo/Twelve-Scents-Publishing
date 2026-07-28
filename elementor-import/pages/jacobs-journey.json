@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "1e31226",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "a1bca00",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Patriarchs Series</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "1e0591c",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Jacob's Journey: Wrestling With Purpose",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "ebe32b7",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Jacob's story is messy, human, and ultimately redemptive \u2014 exactly why it resonates so deeply with kids who are still figuring themselves out.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "e2f112d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 June 20, 2026 \u00b7 4 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "2e6ad44",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/jacob-cover.png",
+              "id": ""
+            },
+            "image_alt": "Cover illustration of Jacob wrestling with his identity and purpose"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a5cb0c7",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "217749e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>If Abraham is faith and Isaac is inheritance, Jacob is something children need just as much: permission to be a work in progress. Jacob schemes. He runs from his mistakes. He gets tricked right back. And still, somehow, he becomes Israel \u2014 the name that an entire nation would eventually carry.</p><p>We wanted a hero whose flaws are on the page, not edited out for the sake of a tidy moral. Kids already know they're not perfect. What they need is proof that God isn't finished with someone just because chapter one was a mess.</p><h2>The famous wrestling match</h2><p>The centerpiece of this book is the night Jacob wrestles a stranger until daybreak and refuses to let go without a blessing. It's a strange, physical, almost uncomfortable scene to put in a children's book \u2014 and that's exactly why we kept it in. Purpose is rarely handed over easily. Sometimes you have to hold on through the dark, limping, and still not quit.</p><p>Our illustrator treated this scene with real weight: dawn breaking over a riverbank, two figures locked together, and Jacob's face caught between exhaustion and stubborn hope.</p><blockquote>\"And he said, Thy name shall be called no more Jacob, but Israel: for as a prince hast thou power with God and with men, and hast prevailed.\"<br><small>Genesis 32:28 \u00b7 KJV 1611</small></blockquote><h2>A new name, not a clean slate</h2><p>Jacob doesn't get a spotless past erased \u2014 he gets a new name to grow into. That distinction matters. Children carrying guilt, comparison, or the sense that they've already messed up too badly need to hear that redemption doesn't require pretending the mess never happened.</p><p>This is the book we hand to the child who feels most like the underdog in their own story \u2014 because Jacob was too, right up until he wasn't.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "22f9bc5",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Patriarchs</a> <a href='blog.html'>Perseverance</a> <a href='blog.html'>Genesis</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c19b8fa",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "980d28f",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "7fa201a",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Isaac: The Promised Son",
+                "link": {
+                  "url": "isaac-the-promised-son.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "6d29e10",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Meet Abraham: The Father Who Believed God \u2192",
+                "link": {
+                  "url": "meet-abraham.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Jacob's Journey: Wrestling With Purpose",
+  "type": "page"
+}

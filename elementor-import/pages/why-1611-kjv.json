@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "7ff7e98",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "3d502a8",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Behind the Scents</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "2d6256d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Why We Chose the 1611 King James Bible as Our Foundation",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a03a952",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Every hero we publish is drawn from Scripture, not sentiment. Here's why the 1611 KJV anchors every book we write.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "63a727f",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 May 30, 2026 \u00b7 6 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "4e0705e",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/OurStory.png",
+              "id": ""
+            },
+            "image_alt": "The shelves were empty, we are filling them with the truth \u2014 graphic from Twelve Scents Publishing's Our Story page"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d972011",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "f3d381d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>People sometimes ask us why we're so specific about our source text. It would be easier, faster even, to write loose retellings and call them \"Bible-inspired.\" We chose not to. Every hero in the Twelve Scents catalog \u2014 Abraham, Sarah, Isaac, Jacob, and every Daughter of Scripture \u2014 is drawn directly from the pages of the 1611 King James Bible, depicted according to the lands they walked and the lineage they carried.</p><p>That's not a stylistic preference. It's the whole point of the company.</p><h2>Restoring the record, not adding representation</h2><p>We did not set out to insert brown children into Scripture for the sake of representation. We set out to restore the record. The heroes of the Bible were brown-skinned men and women who lived, prayed, and obeyed in the actual geography of the ancient Near East and North Africa \u2014 and for far too long, illustrated children's Bibles have quietly erased that fact.</p><p>Anchoring every book in the 1611 KJV text gives us a fixed, defensible standard. When we illustrate Abraham's journey or Sarah's laughter, we aren't guessing at what \"feels\" biblical. We're depicting what Scripture actually describes, in the land it actually happened in.</p><blockquote>\"These are not stories. This is Scripture \u2014 the covenant inheritance of children who descend from the very lands where God spoke, where prophets walked, where the Messiah was born.\"<br><small>Twelve Scents Publishing, Our Story</small></blockquote><h2>Why the diaspora carries the seed</h2><p>We publish for the diaspora because the diaspora carries the seed. Every book is crafted to build character \u2014 courage, obedience, faith, forgiveness \u2014 not through sentiment, but through the weight of truth, and not through apology, but through the authority of the Word.</p><p>The shelves were empty of heroes who looked like the children reading them. We are filling them with the truth \u2014 one Scripture-rooted, historically grounded storybook at a time.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8d62e5d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Behind the Scenes</a> <a href='blog.html'>Foundation</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2cc16e1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "0cb8549",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "9c95849",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah",
+                "link": {
+                  "url": "daughters-of-scripture.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "558185c",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Reading the Word Together: A Family Devotional Guide \u2192",
+                "link": {
+                  "url": "reading-the-word-together.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Why We Chose the 1611 King James Bible as Our Foundation",
+  "type": "page"
+}
