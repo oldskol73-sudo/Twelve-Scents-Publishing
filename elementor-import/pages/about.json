@@ -1,0 +1,371 @@
+{
+  "content": [
+    {
+      "id": "33580f6",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F0E7D8"
+      },
+      "elements": [
+        {
+          "id": "00fcd5d",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>About Twelve Scents</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "b3189c5",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Filling the empty shelves with heroes who look like our children.",
+            "header_size": "h1",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "637d03a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>Reclaiming the shelf. Restoring the heroes. We are brown-skin owned and Scripture rooted. The heroes of the Bible were never pale. Their stories run through brown veins, and their legacies belong in the hands of brown children who see themselves reflected in every faithful act, every bold stand, every covenant kept. We do not insert brown children into Scripture&mdash;we restore them to their rightful place within it. The Bible is their inheritance. Their children deserve to know it.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e8d60a6",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "4a828b7",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "350fd63",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "65e9a11",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/OurStory.png",
+                      "id": ""
+                    },
+                    "image_alt": "The shelves were empty. We are filling them with The Truth!"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "5a7e66a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "707cc67",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Our Story",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "d70d39d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Twelve Scents Publishing exists because the Bible heroes were brown-skinned men and women&mdash;and for too long, our children have not seen them as they were. We did not set out to offer representation. We set out to restore the Record.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "975b66a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>The 1611 King James Bible stands as our foundation. Every hero in this series is drawn from its pages, depicted according to the lands they walked and the lineage they carried. These are not stories. This is Scripture&mdash;the covenant inheritance of children who descend from the very lands where God spoke, where prophets walked, and where the Messiah was born. We publish for the diaspora because the diaspora carries the seed.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "bb3779b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Each book is crafted to build character: courage, obedience, faith, and forgiveness. Not through sentiment, but through the weight of truth. Not through apology, but through the authority of the Word. We write for brown children because brown children deserve to meet Abraham, Moses, David, and Deborah as they were&mdash;heroes who looked like them, obeyed a God who called them, and left a legacy that endures.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e736aa4",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='font-family:Cormorant Garamond,serif;font-size:22px;font-weight:700;color:#3a2a3d;'>The shelves were empty.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "743e36d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='font-family:Cormorant Garamond,serif;font-size:22px;font-weight:700;color:#9a681f;'>We are filling them with The Truth!</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a929c66",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#2C2030"
+      },
+      "elements": [
+        {
+          "id": "7901c14",
+          "elType": "widget",
+          "widgetType": "icon",
+          "settings": {
+            "selected_icon": {
+              "value": "fas fa-graduation-cap",
+              "library": "fa-solid"
+            }
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "692b1fd",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#C9A24B;'>Our mission</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "3991522",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;font-family:Cormorant Garamond,serif;font-size:28px;'>&ldquo;To put a Bible hero who looks like them into the hands of every child of the diaspora &mdash; building courage, character, and belonging through stories worth reading again and again.&rdquo;</p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "6d9959d",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "cfe7a0e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<div style='text-align:center;'><div style='font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9A7B2E;'>What makes us different</div></div>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "91c78b7",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Crafted with faith, heritage & heart",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "0bbc1a0",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "178306c",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "I \u2014 Representation",
+                "description_text": "Brown-skin biblical heroes, drawn with love and authenticity.",
+                "selected_icon": {
+                  "value": "fas fa-cross",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "20298df",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "II \u2014 Scripture-true",
+                "description_text": "Faithful retellings Parents and children can trust.",
+                "selected_icon": {
+                  "value": "fas fa-cross",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "1cbe445",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "III \u2014 Character-first",
+                "description_text": "Every book teaches courage, obedience, faith, or forgiveness.",
+                "selected_icon": {
+                  "value": "fas fa-cross",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "ec1dff1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "title_text": "IV \u2014 Family-owned",
+                "description_text": "A Brown-skin owned business that knows the families it serves.",
+                "selected_icon": {
+                  "value": "fas fa-cross",
+                  "library": "fa-solid"
+                },
+                "position": "top"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f3e618a",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F0E7D8"
+      },
+      "elements": [
+        {
+          "id": "7d9c5c9",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Ready to meet the heroes?",
+            "header_size": "h2",
+            "align": "center"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "7445c25",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>Browse the collection and find the perfect story for the child you love.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "6cddf35",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Shop the Books",
+            "link": {
+              "url": "#shop",
+              "is_external": "",
+              "nofollow": ""
+            }
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "About",
+  "type": "page"
+}

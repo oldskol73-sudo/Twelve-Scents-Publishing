@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "6f30536",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "bcd72b1",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>\u2605 Featured Story</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8c13368",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Meet Abraham: The Father Who Believed God",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "7257b1e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Long before he was a legend, Abraham was a man asked to trust a promise he could not yet see.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "872186b",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 July 14, 2026 \u00b7 4 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "f6c33cf",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-collage.png",
+              "id": ""
+            },
+            "image_alt": "Collage of illustrations from the Abraham storybook, showing Abraham gazing at the stars and standing before his tent"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e166759",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "701ae50",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Every great story has to start somewhere, and for Twelve Scents Publishing, it started with a father. Not a warrior, not a king \u2014 a man who packed up everything he knew and walked toward a country he had never seen, because a voice he trusted told him to go. That's Abraham. And that's exactly why he's Book One.</p><p>We didn't choose Abraham because his story is easy. We chose him because it isn't. He waited decades for a promised son. He made mistakes along the way \u2014 plenty of them. And still, Scripture says he \"believed in the LORD; and he counted it to him for righteousness\" <em>(Genesis 15:6, KJV)</em>. That single verse became the compass for our entire publishing house: faith isn't the absence of doubt or delay. It's choosing to keep walking anyway.</p><h2>Why brown children need to meet him first</h2><p>For a long time, the picture books on our shelves quietly taught brown children that biblical heroes belonged to someone else \u2014 pale illustrations standing in for people who, historically and geographically, looked nothing like that. <strong>Meet Abraham</strong> was our answer: a father from the land of Ur, drawn with the dignity and likeness his story deserves, so that a child flipping through these pages sees not a stranger, but an ancestor.</p><p>The illustrations lean into warm, sun-worn tones \u2014 desert light, woven fabric, weathered hands \u2014 because we wanted every spread to feel less like a costume and more like a memory. Our illustrator spent weeks referencing the geography of the ancient Near East before a single line was drawn.</p><blockquote>\"Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee.\"<br><small>Genesis 12:1 \u00b7 KJV 1611</small></blockquote><h2>What we hope children carry with them</h2><p>We didn't write <strong>Meet Abraham</strong> to teach children a Bible fact. We wrote it so a child closes the book believing something bigger: that obedience \u2014 even uncertain, even unfinished \u2014 is still faith. That you can be afraid and still go. That the promise doesn't have to make sense yet for it to be worth trusting.</p><p>Abraham's story doesn't end in this book. It echoes through Isaac, through Jacob, through every hero still to come in the Men of Valor series. He is the root the rest of the family tree grows from \u2014 which is exactly why he had to be first.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "7b1929a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Patriarchs</a> <a href='blog.html'>Faith</a> <a href='blog.html'>Obedience</a> <a href='blog.html'>Genesis</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "278984b",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "8791ddf",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "06ae056",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Introducing Men of Valor: Our Full Patriarchs Series",
+                "link": {
+                  "url": "men-of-valor.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "03dd927",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Sarah's Obedience: A Companion Story to Abraham \u2192",
+                "link": {
+                  "url": "sarahs-obedience.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Meet Abraham: The Father Who Believed God",
+  "type": "page"
+}

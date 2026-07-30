@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "47ae5c1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "5bbca72",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Women's Collection</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "60e516c",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "fcf533e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>An inside look at the women's collection \u2014 four covers, four callings, and one shared thread of faith we hope every daughter will carry.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "34175fb",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 June 11, 2026 \u00b7 5 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "061f081",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/dos-hannah.png",
+              "id": ""
+            },
+            "image_alt": "Illustration of Hannah, from the Daughters of Scripture series"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "7cdbde0",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "2e30c22",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Some of the boldest faith in the Bible belongs to women whose names get read quickly and moved past. The Daughters of Scripture collection slows down on purpose \u2014 four standalone covers, each built around a woman whose calling looked completely different from the others, and each proof that there is no single shape faith is supposed to take.</p><p>Hannah prayed so fervently in the temple that a priest mistook her for drunk. Miriam watched over her baby brother's basket in the reeds and later led Israel in song. Rebekah made a split-second decision at a well that changed the direction of an entire family line. And Sarah \u2014 already introduced in her own companion book \u2014 anchors the collection as its founding matriarch.</p><h2>Four women, four kinds of courage</h2><p>We were intentional about not flattening these women into a single \"strong woman\" archetype. Hannah's courage is quiet and desperate \u2014 a prayer whispered so hard her lips moved without sound. Miriam's is watchful and clever, a child old enough to think fast under pressure. Rebekah's is decisive, almost impulsive in its generosity. Each cover reflects that difference in posture, color palette, and setting.</p><p>Illustrating four distinct women meant four rounds of historical research \u2014 clothing, region, era \u2014 so that daughters flipping through this collection see real variation, not a repeated template with different names.</p><blockquote>\"For this child I prayed; and the LORD hath given me my petition which I asked of him.\"<br><small>1 Samuel 1:27 \u00b7 KJV 1611</small></blockquote><h2>Why we bundled them together</h2><p>On their own, each woman's story is remarkable. Together, they make an argument we wanted daughters to absorb early: that Scripture is full of women who prayed boldly, acted decisively, protected fiercely, and were remembered by name \u2014 not as footnotes, but as ancestors worth naming your own daughters after.</p><p>This collection releases as a bundle, but each book also stands alone \u2014 because every daughter deserves to meet at least one of these women and recognize a piece of herself.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "2373d53",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Matriarchs</a> <a href='blog.html'>Exodus</a> <a href='blog.html'>1 Samuel</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "98429e1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "99e8602",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "8e25cfc",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Sarah's Obedience: A Companion Story to Abraham",
+                "link": {
+                  "url": "sarahs-obedience.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "62acba4",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Why We Chose the 1611 King James Bible as Our Foundation \u2192",
+                "link": {
+                  "url": "why-1611-kjv.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah",
+  "type": "page"
+}

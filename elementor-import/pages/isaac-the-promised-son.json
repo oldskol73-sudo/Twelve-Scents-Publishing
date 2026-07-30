@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "39af504",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "0586a6e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Patriarchs Series</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "2fc79b1",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Isaac: The Promised Son",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "09b7d58",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>What does it mean to grow up as the child of a promise? Isaac's quiet, steady faith teaches young readers about trust that doesn't need to shout.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "a434e56",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 June 29, 2026 \u00b7 3 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "89bdd18",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/isaac-cover.png",
+              "id": ""
+            },
+            "image_alt": "Cover illustration of Isaac, the promised son of Abraham and Sarah"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "ef0e2a0",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "40bafd9",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Of all the patriarchs, Isaac is the quiet one. He doesn't wrestle an angel. He doesn't build an ark. He isn't asked to leave everything he's ever known. Instead, Isaac's entire life is shaped by one enormous fact: he is the child a whole family waited twenty-five years for, the living proof that a promise kept its word.</p><p>That's precisely why he became Book Two. Children don't only need heroes who do something dramatic. They need heroes who simply <em>are</em> something \u2014 proof that faithfulness gets passed down, generation to generation, even when the second generation never asked to carry it.</p><h2>A story about inherited faith</h2><p>Isaac never chose to be the promised son any more than a child today chooses the family, faith, or expectations they're born into. Our storybook leans gently into that tension \u2014 showing a boy growing into the weight of his own name, learning (much like his mother Sarah once did) to trust a plan bigger than what he can see on any given day.</p><p>The illustrations follow Isaac from the fields where Abraham's flocks grazed to the moment he meets Rebekah \u2014 his own quiet, steady kind of romance, arranged in trust rather than found by chance.</p><blockquote>\"And Abraham called the name of his son that was born unto him, whom Sarah bare to him, Isaac.\"<br><small>Genesis 21:3 \u00b7 KJV 1611</small></blockquote><h2>Why quiet faith still counts</h2><p>Not every child sees themselves in a hero who leaves everything behind or faces down a giant. Some children need to see a hero who simply keeps showing up \u2014 steady, obedient, unremarkable in the way that ordinary faithfulness always looks unremarkable until you notice it's still standing decades later.</p><p>Isaac's story teaches that the middle generation matters just as much as the first. Someone has to receive the promise before it can be passed forward to the next.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "9c6c57e",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Patriarchs</a> <a href='blog.html'>Obedience</a> <a href='blog.html'>Genesis</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "47dde45",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "ba3c0b1",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "0ef2732",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Meet Abraham: The Father Who Believed God",
+                "link": {
+                  "url": "meet-abraham.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "54bd12e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Jacob's Journey: Wrestling With Purpose \u2192",
+                "link": {
+                  "url": "jacobs-journey.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Isaac: The Promised Son",
+  "type": "page"
+}

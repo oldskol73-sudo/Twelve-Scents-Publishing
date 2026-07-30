@@ -1,0 +1,1090 @@
+{
+  "content": [
+    {
+      "id": "d82cc9c",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "088e8cd",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "136c8b8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='color:#e7c36a;'>The Twelve Scents Journal</div>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "764ce1f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Stories, heritage & heroes who look like your children.",
+                "header_size": "h1"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "9d0513f",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Behind-the-page notes on our brown-skin Bible heroes, publishing news, and reflections on raising children in faith.</p>"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "2612a84",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "e14093e",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-collage.png",
+                  "id": ""
+                },
+                "image_alt": "Collage of illustrations from the Abraham storybook, brown-skinned Bible heroes depicted with warmth and dignity"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "a68d14d",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 11px;border-radius:999px;font-size:11px;'>Behind the Scents</span>"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "20033c2",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "c244333",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "550144b",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "All Posts",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "b43b0a2",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Patriarchs",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "90403e7",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Matriarchs",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "479e50e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Behind the Scenes",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "980aebe",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Parenting & Faith",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "0e9ff56",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Announcements",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "deff600",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "cbd46c9",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "cc7f263",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "8157a3a",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/abraham-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Cover illustration of Abraham"
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "5e96e53",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column"
+              },
+              "elements": [
+                {
+                  "id": "df2a53d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='background:#0b1428;color:#e7c36a;padding:4px 10px;border-radius:999px;font-size:11px;'>\u2605 Featured Story</span>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "c765a60",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Meet Abraham: The Father Who Believed God",
+                    "header_size": "h2"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "bb71755",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Twelve Scents Team \u00b7 July 14, 2026 \u00b7 4 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9971074",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Long before he was a legend, Abraham was a man asked to trust a promise he could not yet see. In our very first storybook, we set out to show brown children a hero whose obedience \u2014 not his perfection \u2014 made him great. Here's why his story anchors the entire Twelve Scents series.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "fe01721",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read the full story",
+                    "link": {
+                      "url": "meet-abraham.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "7cea494",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "0311aa5",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "0cf9ee2",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "cac9531",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/sarah-cover-front.png",
+                      "id": ""
+                    },
+                    "image_alt": "Sarah's Obedience: A Companion Story to Abraham"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "2bf915e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sarah's Obedience: A Companion Story to Abraham",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b9b5153",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Matriarchs \u00b7 July 8, 2026 \u00b7 3 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "4f22ef8",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Sarah's faith is often told in Abraham's shadow. Our companion series gives her the front cover \u2014 and the whole story \u2014 she deserves.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "bc002f1",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "sarahs-obedience.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "c2c4d9a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "e69f5b0",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/isaac-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Isaac: The Promised Son"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e693cc2",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Isaac: The Promised Son",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6c3fb81",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Patriarchs \u00b7 June 29, 2026 \u00b7 3 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b083fed",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>What does it mean to grow up as the child of a promise? Isaac's quiet, steady faith teaches young readers about trust that doesn't need to shout.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e54cca1",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "isaac-the-promised-son.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "21bfb27",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "877040f",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/jacob-cover.png",
+                      "id": ""
+                    },
+                    "image_alt": "Jacob's Journey: Wrestling With Purpose"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "d91336d",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Jacob's Journey: Wrestling With Purpose",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "b1126b5",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Patriarchs \u00b7 June 20, 2026 \u00b7 4 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "621abf9",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Jacob's story is messy, human, and ultimately redemptive \u2014 exactly why it resonates so deeply with kids who are still figuring themselves out.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e53ef86",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "jacobs-journey.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "7f95c43",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "73dc1ca",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "6cc1ab5",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/dos-hannah.png",
+                      "id": ""
+                    },
+                    "image_alt": "Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "76262b5",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Daughters of Scripture: Hannah, Miriam, Rebekah & Sarah",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "5da6f6d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Matriarchs \u00b7 June 11, 2026 \u00b7 5 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "22238be",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>An inside look at the women's collection \u2014 four covers, four callings, and one shared thread of faith we hope every daughter will carry.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3a75ced",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "daughters-of-scripture.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "52be727",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "a9247b3",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/OurStory.png",
+                      "id": ""
+                    },
+                    "image_alt": "Why We Chose the 1611 King James Bible as Our Foundation"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "78705e1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Why We Chose the 1611 King James Bible as Our Foundation",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "95f614a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Behind the Scenes \u00b7 May 30, 2026 \u00b7 6 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6913b24",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Every hero we publish is drawn from Scripture, not sentiment. Here's why the 1611 KJV anchors every book we write.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "ffd9337",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "why-1611-kjv.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "5ed48a5",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "63e2f7d",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/first-frame.jpg",
+                      "id": ""
+                    },
+                    "image_alt": "Reading the Word Together: A Family Devotional Guide"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "614e4eb",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Reading the Word Together: A Family Devotional Guide",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "53957c6",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Parenting & Faith \u00b7 May 19, 2026 \u00b7 4 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "388a67a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Five simple questions to ask after storytime that turn a picture book into a real conversation about faith.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6e1ca89",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "reading-the-word-together.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        },
+        {
+          "id": "37da876",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "41f9d1b",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#FFFFFF"
+              },
+              "elements": [
+                {
+                  "id": "7765c7e",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/MenofValorPatriarchs.png",
+                      "id": ""
+                    },
+                    "image_alt": "Introducing Men of Valor: Our Full Patriarchs Series"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "7140bb1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Introducing Men of Valor: Our Full Patriarchs Series",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "63ebdf5",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><small>Announcements \u00b7 May 5, 2026 \u00b7 2 min read</small></p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "e31df67",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Abraham, Isaac, and Jacob are just the beginning \u2014 here's what's coming next in the Men of Valor collection.</p>"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6af3acc",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Read more \u2192",
+                    "link": {
+                      "url": "men-of-valor.html",
+                      "is_external": "",
+                      "nofollow": ""
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "57d60c9",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed"
+      },
+      "elements": [
+        {
+          "id": "c698c40",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style='text-align:center;'>1 &nbsp; <a href='#'>2</a> &nbsp; <a href='#'>3</a> &nbsp; <a href='#'>Next \u2192</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "8de6b84",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "d0e3ed6",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column"
+          },
+          "elements": [
+            {
+              "id": "c359d14",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Browse by Category",
+                "header_size": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "70ff4c2",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "f6a25a4",
+                    "text": "All Posts (08)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "cec3941",
+                    "text": "Patriarchs (03)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "3e390db",
+                    "text": "Matriarchs (02)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "56aa65a",
+                    "text": "Behind the Scenes (01)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "ddfbeba",
+                    "text": "Parenting & Faith (01)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "7068241",
+                    "text": "Announcements (01)",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-chevron-right",
+                      "library": "fa-solid"
+                    }
+                  }
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "25170f1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Popular Posts",
+                "header_size": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "47d86d5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><a href='sarahs-obedience.html'>Sarah's Obedience: A Companion Story to Abraham</a> \u2014 July 8, 2026</p>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "47d379b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><a href='why-1611-kjv.html'>Why We Chose the 1611 King James Bible</a> \u2014 May 30, 2026</p>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "24f1aef",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><a href='men-of-valor.html'>Introducing Men of Valor</a> \u2014 May 5, 2026</p>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "d0b94b6",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Join Our Reading Ministry",
+                "header_size": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "821434b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>New stories, early cover reveals, and faith & parenting notes \u2014 straight to your inbox. <br><small>NOTE: Newsletter signup form \u2014 recommend an email-marketing plugin/widget (e.g. Mailchimp/WPForms) rather than native Elementor form.</small></p>"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "a76f5bf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "About the Publisher",
+                "header_size": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "67759bb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Twelve Scents Publishing creates inspirational children's Bible storybooks featuring brown-skin biblical heroes. Minority-owned, Scripture-rooted, shipped from the USA.</p>"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Blog",
+  "type": "page"
+}

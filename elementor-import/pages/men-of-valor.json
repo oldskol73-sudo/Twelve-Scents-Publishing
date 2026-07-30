@@ -1,0 +1,159 @@
+{
+  "content": [
+    {
+      "id": "2466d15",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#0b1428"
+      },
+      "elements": [
+        {
+          "id": "2f92ec4",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style='background:#0b1428;color:#e7c36a;padding:5px 12px;border-radius:999px;font-size:11px;'>Announcement</span>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "7d2ad90",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Introducing Men of Valor: Our Full Patriarchs Series",
+            "header_size": "h1"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "ae16336",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Abraham, Isaac, and Jacob are just the beginning \u2014 here's what's coming next in the Men of Valor collection.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "8050a06",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><small>By the Twelve Scents Team \u00b7 May 5, 2026 \u00b7 2 min read</small></p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "82fc527",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "__REPLACE_WITH_WORDPRESS_MEDIA_URL__/MenofValorPatriarchs.png",
+              "id": ""
+            },
+            "image_alt": "Announcement graphic for the Men of Valor patriarchs series showing silhouettes of the patriarchs"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "dbe893c",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "b40d96a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>When we launched Book One with Abraham, we knew we weren't publishing a single story \u2014 we were opening the front door to a whole family line. Today we're officially naming what's been in the works since the very beginning: <strong>Men of Valor</strong>, the complete patriarchs series.</p><p>Abraham, Isaac, and Jacob are the first three covers, already available for pre-sale. But the family tree doesn't stop there, and neither will we.</p><h2>What's coming next</h2><p>Men of Valor will continue to expand with additional patriarchs and the men whose obedience shaped Israel's earliest generations \u2014 each one illustrated with the same historical care as Abraham, Isaac, and Jacob, and each one paired, where their stories intersect, with the Daughters of Scripture companion collection.</p><p>Our goal is a full shelf: a complete, Scripture-rooted family library where a child can trace an unbroken line of brown-skinned heroes from Genesis forward, without ever losing themselves in the gaps between books.</p><blockquote>\"The seed of the righteous shall be delivered.\"<br><small>Proverbs 11:21 \u00b7 KJV 1611</small></blockquote><h2>Why we're announcing it now</h2><p>We're sharing this early, before every cover is finished, because we want families to plan their shelf around it \u2014 pre-ordering the books that exist now, and knowing exactly which brothers, sons, and grandsons are still on their way.</p><p>Follow the Journal or join our reading ministry newsletter below, and you'll be the first to see each new cover the moment it's revealed.</p>"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "0acdd4a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p><a href='blog.html'>Announcements</a> <a href='blog.html'>Patriarchs</a></p>"
+          },
+          "elements": [],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c9d980f",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "background_background": "classic",
+        "background_color": "#F6F1E9"
+      },
+      "elements": [
+        {
+          "id": "88d5332",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row"
+          },
+          "elements": [
+            {
+              "id": "6a82d9e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "\u2190 Previous: Reading the Word Together: A Family Devotional Guide",
+                "link": {
+                  "url": "reading-the-word-together.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "847e94a",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Next: Meet Abraham: The Father Who Believed God \u2192",
+                "link": {
+                  "url": "meet-abraham.html",
+                  "is_external": "",
+                  "nofollow": ""
+                }
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Introducing Men of Valor: Our Full Patriarchs Series",
+  "type": "page"
+}
