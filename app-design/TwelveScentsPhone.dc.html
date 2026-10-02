@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>@keyframes tsIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.ts-noscroll::-webkit-scrollbar{display:none}</style>
+<script src="./ios-frame.js"></script></helmet>
+<x-import component-from-global-scope="IOSDevice" dark="{{ true }}" hint-size="402px,874px">
+<div style="position:relative;height:874px;background:#14110e;color:#efe6d6;font-family:'Jost',system-ui,sans-serif">
+<div ref="{{ scrollRef }}" class="ts-noscroll" style="position:absolute;top:0;left:0;right:0;bottom:84px;overflow-y:auto;padding-top:54px;scrollbar-width:none">
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div style="padding:12px 0 32px;animation:tsIn .35s ease">
+<div style="padding:0 24px;display:flex;justify-content:space-between;align-items:center">
+<div style="font:500 13px/1 'Jost';letter-spacing:.32em">TWELVE SCENTS</div>
+<button onClick="{{ goSearch }}" style="appearance:none;background:transparent;border:0;width:44px;height:44px;margin-right:-12px;cursor:pointer;display:flex;align-items:center;justify-content:center"><div style="width:15px;height:15px;border:1.5px solid #efe6d6;border-radius:50%;position:relative"><div style="position:absolute;width:7px;height:1.5px;background:#efe6d6;right:-6px;bottom:-3px;transform:rotate(45deg)"></div></div></button>
+</div>
+<div style="padding:0 24px">
+<h1 style="margin:28px 0 10px;font:400 38px/1.05 'Bodoni Moda',serif;letter-spacing:-.01em;text-wrap:pretty">Twelve tribes.<br><em style="color:#c9a56b">Twelve atmospheres.</em></h1>
+<p style="margin:0 0 28px;font:300 15px/1.5 'Jost';color:#b3a690;text-wrap:pretty">Hand-crafted room fragrances in luxury glass. Just 3 sprays last up to 3 days.</p>
+</div>
+
+<sc-if value="{{ dirGrid }}" hint-placeholder-val="{{ true }}">
+<div style="margin:0 24px;border:1px solid #c9a56b;border-radius:4px;padding:6px">
+<div style="border:1px solid rgba(201,165,107,.35);border-radius:2px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))">
+<sc-for list="{{ tribes }}" as="t" hint-placeholder-count="12">
+<button onClick="{{ t.open }}" style="appearance:none;background:transparent;border:0;border-right:1px solid rgba(201,165,107,.18);border-bottom:1px solid rgba(201,165,107,.18);padding:18px 4px 14px;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;color:#efe6d6;font-family:'Jost'" style-active="background:rgba(201,165,107,.08)">
+<div style="width:48px;height:48px;border-radius:50%;background:{{ t.color }};box-shadow:inset 0 -6px 12px rgba(0,0,0,.35),inset 0 4px 8px rgba(255,255,255,.18),0 0 0 3px #14110e,0 0 0 4px rgba(201,165,107,.6)"></div>
+<div style="font:400 15px/1 'Bodoni Moda',serif">{{ t.name }}</div>
+<div style="font:400 9px/1 'Jost';letter-spacing:.18em;color:#b3a690">{{ t.stoneUpper }}</div>
+</button>
+</sc-for>
+</div>
+</div>
+<p style="margin:14px 0 0;text-align:center;font:400 11px/1.4 'Jost';letter-spacing:.14em;color:#b3a690">TAP A STONE TO EXPLORE</p>
+</sc-if>
+
+<sc-if value="{{ dirList }}" hint-placeholder-val="{{ false }}">
+<div style="margin:0 24px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none" class="ts-noscroll">
+<sc-for list="{{ chips }}" as="c" hint-placeholder-count="5">
+<button onClick="{{ c.pick }}" style="appearance:none;flex:none;height:36px;padding:0 16px;border-radius:18px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};cursor:pointer;font:400 13px/1 'Jost'">{{ c.label }}</button>
+</sc-for>
+</div>
+<div style="margin:16px 24px 0;display:flex;flex-direction:column;border-top:1px solid rgba(239,230,214,.14)">
+<sc-for list="{{ homeList }}" as="t" hint-placeholder-count="12">
+<button onClick="{{ t.open }}" style="appearance:none;background:transparent;border:0;border-bottom:1px solid rgba(239,230,214,.14);padding:16px 0;display:flex;align-items:center;gap:16px;cursor:pointer;color:#efe6d6;text-align:left;font-family:'Jost'">
+<div style="font:400 10px/1 'Jost';letter-spacing:.14em;color:#b3a690;width:28px">{{ t.numeral }}</div>
+<div style="width:36px;height:36px;border-radius:50%;flex:none;background:{{ t.color }};box-shadow:inset 0 -4px 8px rgba(0,0,0,.35)"></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+<div style="font:400 19px/1 'Bodoni Moda',serif">{{ t.name }}</div>
+<div style="font:300 13px/1.3 'Jost';color:#b3a690">{{ t.mood }}</div>
+</div>
+<div style="font:300 14px/1 'Jost';color:#b3a690">{{ t.priceLabel }}</div>
+</button>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ dirCarousel }}" hint-placeholder-val="{{ false }}">
+<div class="ts-noscroll" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 24px;scroll-padding:0 24px;scrollbar-width:none">
+<sc-for list="{{ tribes }}" as="t" hint-placeholder-count="3">
+<button onClick="{{ t.open }}" style="appearance:none;border:0;flex:none;width:290px;height:400px;scroll-snap-align:start;border-radius:3px;background:{{ t.color }};color:#efe6d6;cursor:pointer;text-align:left;padding:22px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;font-family:'Jost'">
+<div style="position:absolute;right:-30px;top:40px;font:400 220px/1 'Bodoni Moda',serif;color:rgba(0,0,0,.18)">{{ t.numeral }}</div>
+<div style="position:relative;display:flex;justify-content:space-between;font:400 10px/1 'Jost';letter-spacing:.2em"><span>{{ t.stoneUpper }}</span><span>{{ t.numeral }} / XII</span></div>
+<div style="position:relative;display:flex;flex-direction:column;gap:10px">
+<div style="font:400 46px/1 'Bodoni Moda',serif">{{ t.name }}</div>
+<div style="font:400 italic 17px/1.35 'Bodoni Moda',serif">{{ t.mood }}</div>
+<div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(239,230,214,.4);padding-top:14px;font:500 11px/1 'Jost';letter-spacing:.16em"><span>{{ t.priceLabel }}</span><span>EXPLORE →</span></div>
+</div>
+</button>
+</sc-for>
+</div>
+<div style="margin:24px 24px 0;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">BY CHARACTER</div>
+<div style="margin:12px 24px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+<sc-for list="{{ families }}" as="f" hint-placeholder-count="4">
+<button onClick="{{ f.open }}" style="appearance:none;background:transparent;border:1px solid rgba(239,230,214,.18);border-radius:2px;color:#efe6d6;padding:14px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:6px;font-family:'Jost'"><span style="font:400 18px/1 'Bodoni Moda',serif">{{ f.label }}</span><span style="font:300 12px/1 'Jost';color:#b3a690">{{ f.count }} scents</span></button>
+</sc-for>
+</div>
+</sc-if>
+
+<div style="margin:32px 24px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(239,230,214,.14);border:1px solid rgba(239,230,214,.14)">
+<div style="background:#14110e;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="font:400 24px/1 'Bodoni Moda',serif;color:#c9a56b">3</div><div style="font:400 10px/1.2 'Jost';letter-spacing:.12em;color:#b3a690">SPRAYS</div></div>
+<div style="background:#14110e;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="font:400 24px/1 'Bodoni Moda',serif;color:#c9a56b">3</div><div style="font:400 10px/1.2 'Jost';letter-spacing:.12em;color:#b3a690">DAYS</div></div>
+<div style="background:#14110e;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="font:400 24px/1 'Bodoni Moda',serif;color:#c9a56b">12</div><div style="font:400 10px/1.2 'Jost';letter-spacing:.12em;color:#b3a690">SCENTS</div></div>
+</div>
+<div style="padding:0 24px">
+<button onClick="{{ goFinder }}" style="margin-top:16px;width:100%;appearance:none;background:transparent;border:1px solid #c9a56b;color:#efe6d6;border-radius:2px;padding:16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'Jost'" style-active="background:rgba(201,165,107,.1)">
+<span style="display:flex;flex-direction:column;gap:5px;text-align:left"><span style="font:400 18px/1 'Bodoni Moda',serif">Not sure where to start?</span><span style="font:300 13px/1.3 'Jost';color:#b3a690">Three questions to find your tribe</span></span>
+<span style="font:300 20px/1 'Jost';color:#c9a56b">→</span>
+</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isSearch }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 24px 32px;animation:tsIn .35s ease">
+<div style="font:400 11px/1 'Jost';letter-spacing:.2em;color:#c9a56b">SEARCH</div>
+<div style="margin-top:16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #c9a56b;padding-bottom:10px">
+<div style="width:14px;height:14px;border:1.5px solid #b3a690;border-radius:50%;flex:none"></div>
+<input value="{{ query }}" onChange="{{ onQuery }}" placeholder="Tribe, stone or note" style="flex:1;min-width:0;background:transparent;border:0;outline:none;color:#efe6d6;font:400 22px/1.2 'Bodoni Moda',serif;padding:4px 0">
+<sc-if value="{{ query }}" hint-placeholder-val="{{ false }}"><button onClick="{{ clearQuery }}" style="appearance:none;background:transparent;border:0;color:#b3a690;cursor:pointer;font:400 11px/1 'Jost';letter-spacing:.14em;min-height:32px">CLEAR</button></sc-if>
+</div>
+<div style="margin-top:20px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">CHARACTER</div>
+<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{ chips }}" as="c" hint-placeholder-count="5">
+<button onClick="{{ c.pick }}" style="appearance:none;height:36px;padding:0 16px;border-radius:18px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};cursor:pointer;font:400 13px/1 'Jost'">{{ c.label }}</button>
+</sc-for>
+</div>
+<div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center">
+<div style="font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">{{ resultCount }}</div>
+<div style="display:flex;border:1px solid rgba(239,230,214,.2);border-radius:2px">
+<sc-for list="{{ sorts }}" as="s" hint-placeholder-count="2">
+<button onClick="{{ s.pick }}" style="appearance:none;border:0;background:{{ s.bg }};color:{{ s.fg }};height:32px;padding:0 12px;cursor:pointer;font:400 11px/1 'Jost';letter-spacing:.12em">{{ s.label }}</button>
+</sc-for>
+</div>
+</div>
+<div style="margin-top:12px;display:flex;flex-direction:column;border-top:1px solid rgba(239,230,214,.14)">
+<sc-for list="{{ results }}" as="t" hint-placeholder-count="6">
+<button onClick="{{ t.open }}" style="appearance:none;background:transparent;border:0;border-bottom:1px solid rgba(239,230,214,.14);padding:14px 0;display:flex;align-items:center;gap:14px;cursor:pointer;color:#efe6d6;text-align:left;font-family:'Jost'">
+<div style="width:40px;height:52px;border-radius:2px;flex:none;background:{{ t.color }}"></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+<div style="font:400 18px/1 'Bodoni Moda',serif">{{ t.name }}</div>
+<div style="font:300 12px/1.3 'Jost';color:#b3a690">{{ t.noteLine }}</div>
+</div>
+<div style="font:300 14px/1 'Jost';color:#b3a690">{{ t.priceLabel }}</div>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+<p style="margin:28px 0 0;font:300 15px/1.5 'Jost';color:#b3a690;text-align:center">No scents match. Try a note like “cedar” or clear the filter.</p>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isProduct }}" hint-placeholder-val="{{ false }}">
+<div style="animation:tsIn .35s ease">
+<div style="padding:4px 16px 0;display:flex;justify-content:space-between;align-items:center">
+<button onClick="{{ back }}" style="appearance:none;background:transparent;border:0;color:#efe6d6;min-height:44px;padding:0 8px;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em;display:flex;align-items:center;gap:8px"><span style="font-size:18px;color:#c9a56b">‹</span>BACK</button>
+<button onClick="{{ toggleFav }}" style="appearance:none;background:transparent;border:0;color:{{ favColor }};min-height:44px;padding:0 8px;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em">{{ favLabel }}</button>
+</div>
+<div style="margin:8px 24px 0;height:300px;border-radius:2px;background:{{ p.color }};display:flex;align-items:flex-end;justify-content:center;padding-bottom:28px;position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.16),rgba(0,0,0,.35) 75%)"></div>
+<div style="position:relative;display:flex;flex-direction:column;align-items:center">
+<div style="width:34px;height:30px;background:linear-gradient(90deg,#8a6f45,#e2c48f 45%,#8a6f45);border-radius:3px 3px 0 0"></div>
+<div style="width:22px;height:12px;background:rgba(239,230,214,.3)"></div>
+<div style="width:120px;height:170px;border-radius:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center">
+<div style="background:#efe6d6;color:#14110e;padding:12px 8px;width:88px;display:flex;flex-direction:column;align-items:center;gap:5px">
+<div style="font:500 6px/1 'Jost';letter-spacing:.24em">TWELVE SCENTS</div>
+<div style="font:400 15px/1 'Bodoni Moda',serif">{{ p.name }}</div>
+</div>
+</div>
+</div>
+<div style="position:absolute;top:14px;left:14px;font:400 9px/1 'Jost';letter-spacing:.16em;color:rgba(239,230,214,.75)">PRODUCT PHOTO</div>
+</div>
+<div style="padding:24px 24px 32px">
+<div style="font:400 11px/1 'Jost';letter-spacing:.2em;color:#c9a56b">{{ p.numeral }} · {{ p.stoneUpper }} · {{ p.charUpper }}</div>
+<h2 style="margin:10px 0 6px;font:400 40px/1 'Bodoni Moda',serif">{{ p.name }}</h2>
+<div style="font:400 italic 18px/1.35 'Bodoni Moda',serif">{{ p.mood }}</div>
+<p style="margin:14px 0 0;font:300 15px/1.55 'Jost';color:#b3a690;text-wrap:pretty">{{ p.line }}</p>
+<div style="margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(239,230,214,.14);border-bottom:1px solid rgba(239,230,214,.14)">
+<sc-for list="{{ p.noteRows }}" as="n" hint-placeholder-count="3">
+<div style="padding:14px 0;display:flex;flex-direction:column;gap:6px"><div style="font:400 10px/1 'Jost';letter-spacing:.16em;color:#b3a690">{{ n.tier }}</div><div style="font:400 14px/1.3 'Jost'">{{ n.note }}</div></div>
+</sc-for>
+</div>
+<div style="margin-top:22px;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ buyOpts }}" as="o" hint-placeholder-count="2">
+<button onClick="{{ o.pick }}" style="appearance:none;min-height:60px;border-radius:2px;border:1px solid {{ o.border }};background:{{ o.bg }};color:#efe6d6;cursor:pointer;display:flex;align-items:center;gap:12px;padding:0 14px;text-align:left;font-family:'Jost'">
+<div style="width:18px;height:18px;border-radius:50%;border:1.5px solid {{ o.border }};display:flex;align-items:center;justify-content:center;flex:none"><div style="width:8px;height:8px;border-radius:50%;background:{{ o.dot }}"></div></div>
+<span style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font:400 14px/1 'Jost'">{{ o.label }}</span><span style="font:300 12px/1.2 'Jost';color:#b3a690">{{ o.hint }}</span></span>
+<span style="font:400 15px/1 'Jost'">{{ o.price }}</span>
+</button>
+</sc-for>
+</div>
+<div style="margin-top:16px;display:flex;gap:10px">
+<div style="display:flex;align-items:center;border:1px solid rgba(239,230,214,.25);border-radius:2px">
+<button onClick="{{ dec }}" style="appearance:none;background:transparent;border:0;color:#efe6d6;width:44px;height:52px;font:300 20px/1 'Jost';cursor:pointer">−</button>
+<div style="width:22px;text-align:center;font:400 15px/1 'Jost'">{{ qty }}</div>
+<button onClick="{{ inc }}" style="appearance:none;background:transparent;border:0;color:#efe6d6;width:44px;height:52px;font:300 20px/1 'Jost';cursor:pointer">+</button>
+</div>
+<button onClick="{{ addToBag }}" style="flex:1;appearance:none;border:0;border-radius:2px;background:#c9a56b;color:#14110e;height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em" style-active="background:#b8925a">ADD TO BAG · {{ addPrice }}</button>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isFinder }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 24px 32px;animation:tsIn .35s ease">
+<div style="font:400 11px/1 'Jost';letter-spacing:.2em;color:#c9a56b">SCENT FINDER</div>
+<sc-if value="{{ finderAsking }}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:20px;display:flex;gap:6px">
+<sc-for list="{{ progress }}" as="pg" hint-placeholder-count="3"><div style="flex:1;height:2px;background:{{ pg.color }}"></div></sc-for>
+</div>
+<div style="margin-top:28px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">QUESTION {{ stepNum }} OF 3</div>
+<h2 style="margin:12px 0 28px;font:400 32px/1.1 'Bodoni Moda',serif;text-wrap:pretty">{{ question }}</h2>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
+<button onClick="{{ o.pick }}" style="appearance:none;background:transparent;border:1px solid rgba(239,230,214,.22);border-radius:2px;color:#efe6d6;min-height:64px;padding:0 18px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;font-family:'Jost'" style-hover="border-color:#c9a56b" style-active="background:rgba(201,165,107,.1)">
+<span style="display:flex;flex-direction:column;gap:5px"><span style="font:400 17px/1 'Jost'">{{ o.label }}</span><span style="font:300 13px/1.2 'Jost';color:#b3a690">{{ o.hint }}</span></span>
+<span style="font:300 18px/1 'Jost';color:#c9a56b">→</span>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ canStepBack }}" hint-placeholder-val="{{ false }}">
+<button onClick="{{ stepBack }}" style="margin-top:18px;appearance:none;background:transparent;border:0;color:#b3a690;min-height:44px;padding:0;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em">‹ PREVIOUS</button>
+</sc-if>
+</sc-if>
+<sc-if value="{{ finderDone }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:24px;display:flex;flex-direction:column;align-items:center;text-align:center;animation:tsIn .45s ease">
+<div style="font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">YOUR TRIBE IS</div>
+<div style="margin-top:28px;width:120px;height:120px;border-radius:50%;background:{{ r.color }};box-shadow:inset 0 -12px 24px rgba(0,0,0,.4),inset 0 8px 16px rgba(255,255,255,.18),0 0 0 6px #14110e,0 0 0 7px #c9a56b"></div>
+<h2 style="margin:28px 0 8px;font:400 48px/1 'Bodoni Moda',serif">{{ r.name }}</h2>
+<div style="font:400 italic 19px/1.35 'Bodoni Moda',serif;color:#c9a56b">{{ r.mood }}</div>
+<p style="margin:14px 0 0;font:300 15px/1.55 'Jost';color:#b3a690;text-wrap:pretty">{{ r.line }}</p>
+<button onClick="{{ openResult }}" style="margin-top:28px;width:100%;appearance:none;border:0;border-radius:2px;background:#c9a56b;color:#14110e;height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em">VIEW {{ r.upper }}</button>
+<button onClick="{{ restart }}" style="margin-top:8px;appearance:none;background:transparent;border:0;color:#b3a690;min-height:44px;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em">START OVER</button>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isBag }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 24px 32px;animation:tsIn .35s ease">
+<div style="font:400 11px/1 'Jost';letter-spacing:.2em;color:#c9a56b">YOUR BAG</div>
+<sc-if value="{{ bagEmpty }}" hint-placeholder-val="{{ false }}">
+<h2 style="margin:16px 0 10px;font:400 32px/1.1 'Bodoni Moda',serif">Nothing here yet.</h2>
+<p style="margin:0 0 24px;font:300 15px/1.5 'Jost';color:#b3a690">Choose a stone from the collection to begin.</p>
+<button onClick="{{ goHome }}" style="width:100%;appearance:none;background:transparent;border:1px solid #c9a56b;color:#efe6d6;border-radius:2px;height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em">BROWSE THE TWELVE</button>
+</sc-if>
+<sc-if value="{{ bagHasItems }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:20px;display:flex;flex-direction:column;border-top:1px solid rgba(239,230,214,.14)">
+<sc-for list="{{ bagItems }}" as="b" hint-placeholder-count="2">
+<div style="display:flex;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(239,230,214,.14)">
+<div style="width:56px;height:72px;border-radius:2px;background:{{ b.color }};flex:none;display:flex;align-items:center;justify-content:center"><div style="width:24px;height:38px;border-radius:4px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1)"></div></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+<div style="font:400 19px/1 'Bodoni Moda',serif">{{ b.name }}</div>
+<div style="font:300 12px/1.2 'Jost';color:#b3a690">{{ b.planLabel }}</div>
+<div style="display:flex;align-items:center;gap:2px;margin-top:4px">
+<button onClick="{{ b.dec }}" style="appearance:none;background:transparent;border:1px solid rgba(239,230,214,.22);color:#efe6d6;width:32px;height:32px;border-radius:2px;cursor:pointer;font:300 16px/1 'Jost'">−</button>
+<div style="width:28px;text-align:center;font:400 14px/1 'Jost'">{{ b.qty }}</div>
+<button onClick="{{ b.inc }}" style="appearance:none;background:transparent;border:1px solid rgba(239,230,214,.22);color:#efe6d6;width:32px;height:32px;border-radius:2px;cursor:pointer;font:300 16px/1 'Jost'">+</button>
+</div>
+</div>
+<div style="font:400 15px/1 'Jost'">{{ b.total }}</div>
+</div>
+</sc-for>
+</div>
+<div style="margin-top:16px;padding:12px 14px;border:1px solid rgba(201,165,107,.4);border-radius:2px;font:300 13px/1.4 'Jost';color:#b3a690">{{ shipNote }}</div>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;font:300 14px/1 'Jost';color:#b3a690"><span>Subtotal</span><span>{{ subtotal }}</span></div>
+<div style="display:flex;justify-content:space-between;font:400 20px/1 'Bodoni Moda',serif;padding-top:10px;border-top:1px solid rgba(239,230,214,.14)"><span>Estimated total</span><span>{{ subtotal }}</span></div>
+</div>
+<button onClick="{{ goCheckout }}" style="margin-top:24px;width:100%;appearance:none;border:0;border-radius:2px;background:#c9a56b;color:#14110e;height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em" style-active="background:#b8925a">CHECKOUT</button>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isCheckout }}" hint-placeholder-val="{{ false }}">
+<div style="animation:tsIn .35s ease">
+<div style="padding:4px 16px 0">
+<button onClick="{{ back }}" style="appearance:none;background:transparent;border:0;color:#efe6d6;min-height:44px;padding:0 8px;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em;display:flex;align-items:center;gap:8px"><span style="font-size:18px;color:#c9a56b">‹</span>BAG</button>
+</div>
+<div style="padding:4px 24px 32px">
+<h2 style="margin:0 0 20px;font:400 32px/1.1 'Bodoni Moda',serif">Checkout</h2>
+<div style="font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">SHIP TO</div>
+<div style="margin-top:10px;padding:14px;border:1px solid rgba(239,230,214,.18);border-radius:2px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+<div style="font:300 14px/1.5 'Jost'">Hannah Levin<br>214 Cedar Lane<br>Asheville, NC 28801</div>
+<div style="font:400 11px/1 'Jost';letter-spacing:.14em;color:#c9a56b">EDIT</div>
+</div>
+<div style="margin-top:22px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">DELIVERY</div>
+<div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ deliveryOpts }}" as="o" hint-placeholder-count="2">
+<button onClick="{{ o.pick }}" style="appearance:none;min-height:56px;border-radius:2px;border:1px solid {{ o.border }};background:{{ o.bg }};color:#efe6d6;cursor:pointer;display:flex;align-items:center;gap:12px;padding:0 14px;text-align:left;font-family:'Jost'">
+<div style="width:18px;height:18px;border-radius:50%;border:1.5px solid {{ o.border }};display:flex;align-items:center;justify-content:center;flex:none"><div style="width:8px;height:8px;border-radius:50%;background:{{ o.dot }}"></div></div>
+<span style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font:400 14px/1 'Jost'">{{ o.label }}</span><span style="font:300 12px/1 'Jost';color:#b3a690">{{ o.hint }}</span></span>
+<span style="font:400 14px/1 'Jost'">{{ o.price }}</span>
+</button>
+</sc-for>
+</div>
+<div style="margin-top:22px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">PAYMENT</div>
+<div style="margin-top:10px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+<sc-for list="{{ payOpts }}" as="o" hint-placeholder-count="2">
+<button onClick="{{ o.pick }}" style="appearance:none;height:52px;border-radius:2px;border:1px solid {{ o.border }};background:{{ o.bg }};color:#efe6d6;cursor:pointer;font:400 14px/1 'Jost'">{{ o.label }}</button>
+</sc-for>
+</div>
+<button onClick="{{ togglePoints }}" style="margin-top:22px;width:100%;appearance:none;background:transparent;border:1px solid rgba(201,165,107,.5);border-radius:2px;color:#efe6d6;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;text-align:left;font-family:'Jost'">
+<div style="width:40px;height:24px;border-radius:12px;background:{{ pointsTrack }};position:relative;flex:none;transition:background .2s"><div style="position:absolute;top:3px;left:{{ pointsKnob }};width:18px;height:18px;border-radius:50%;background:#efe6d6;transition:left .2s"></div></div>
+<span style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font:400 14px/1 'Jost'">Use 1,000 points</span><span style="font:300 12px/1 'Jost';color:#b3a690">1,240 available · $10 off</span></span>
+</button>
+<div style="margin-top:22px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;font:300 14px/1 'Jost';color:#b3a690"><span>Subtotal</span><span>{{ subtotal }}</span></div>
+<div style="display:flex;justify-content:space-between;font:300 14px/1 'Jost';color:#b3a690"><span>Shipping</span><span>{{ shipping }}</span></div>
+<sc-if value="{{ usePoints }}" hint-placeholder-val="{{ false }}"><div style="display:flex;justify-content:space-between;font:300 14px/1 'Jost';color:#c9a56b"><span>Rewards</span><span>−$10.00</span></div></sc-if>
+<div style="display:flex;justify-content:space-between;font:400 20px/1 'Bodoni Moda',serif;padding-top:10px;border-top:1px solid rgba(239,230,214,.14)"><span>Total</span><span>{{ total }}</span></div>
+</div>
+<button onClick="{{ placeOrder }}" style="margin-top:24px;width:100%;appearance:none;border:0;border-radius:2px;background:{{ payBtnBg }};color:{{ payBtnFg }};height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em">{{ payBtnLabel }}</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
+<div style="padding:80px 32px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;animation:tsIn .45s ease">
+<div style="width:64px;height:64px;border-radius:50%;border:1px solid #c9a56b;display:flex;align-items:center;justify-content:center;font:300 26px/1 'Jost';color:#c9a56b">✓</div>
+<h2 style="margin:28px 0 10px;font:400 36px/1.1 'Bodoni Moda',serif">Order placed.</h2>
+<p style="margin:0;font:300 15px/1.55 'Jost';color:#b3a690;text-wrap:pretty">Order {{ lastOrderId }} is confirmed. You earned {{ earned }} points.</p>
+<button onClick="{{ goAccount }}" style="margin-top:32px;width:100%;appearance:none;border:0;background:#c9a56b;color:#14110e;border-radius:2px;height:54px;cursor:pointer;font:500 12px/1 'Jost';letter-spacing:.16em">VIEW ORDERS</button>
+<button onClick="{{ goHome }}" style="margin-top:8px;appearance:none;background:transparent;border:0;color:#b3a690;min-height:44px;cursor:pointer;font:400 12px/1 'Jost';letter-spacing:.14em">KEEP BROWSING</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAccount }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 24px 32px;animation:tsIn .35s ease">
+<div style="font:400 11px/1 'Jost';letter-spacing:.2em;color:#c9a56b">ACCOUNT</div>
+<h2 style="margin:12px 0 20px;font:400 32px/1.1 'Bodoni Moda',serif">Shalom, Hannah.</h2>
+<div style="border:1px solid #c9a56b;border-radius:2px;padding:18px">
+<div style="display:flex;justify-content:space-between;align-items:baseline">
+<div style="font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">REWARDS</div>
+<div style="font:400 11px/1 'Jost';letter-spacing:.16em;color:#c9a56b">{{ tierLabel }}</div>
+</div>
+<div style="margin-top:12px;font:400 40px/1 'Bodoni Moda',serif">{{ pointsLabel }}</div>
+<div style="margin-top:14px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px">
+<sc-for list="{{ stoneTrack }}" as="s" hint-placeholder-count="12"><div style="height:6px;border-radius:1px;background:{{ s.color }}"></div></sc-for>
+</div>
+<div style="margin-top:10px;font:300 13px/1.4 'Jost';color:#b3a690">{{ tierHint }}</div>
+</div>
+<div style="margin-top:28px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">SUBSCRIPTION</div>
+<div style="margin-top:10px;padding:14px;border:1px solid rgba(239,230,214,.18);border-radius:2px;display:flex;gap:14px;align-items:center">
+<div style="width:40px;height:52px;border-radius:2px;background:#2f6e4a;flex:none"></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+<div style="font:400 18px/1 'Bodoni Moda',serif">Judah</div>
+<div style="font:300 12px/1.3 'Jost';color:#b3a690">Every 6 weeks · {{ subNext }}</div>
+</div>
+<button onClick="{{ skipSub }}" style="appearance:none;background:transparent;border:1px solid rgba(239,230,214,.25);color:#efe6d6;border-radius:2px;height:36px;padding:0 12px;cursor:pointer;font:400 11px/1 'Jost';letter-spacing:.12em">{{ skipLabel }}</button>
+</div>
+<div style="margin-top:28px;font:400 11px/1 'Jost';letter-spacing:.16em;color:#b3a690">ORDERS</div>
+<div style="margin-top:10px;display:flex;flex-direction:column;border-top:1px solid rgba(239,230,214,.14)">
+<sc-for list="{{ orders }}" as="o" hint-placeholder-count="3">
+<div style="padding:14px 0;border-bottom:1px solid rgba(239,230,214,.14);display:flex;align-items:center;gap:12px">
+<div style="display:flex;flex:none">
+<sc-for list="{{ o.dots }}" as="d" hint-placeholder-count="2"><div style="width:22px;height:22px;border-radius:50%;background:{{ d.color }};margin-right:-6px;box-shadow:0 0 0 2px #14110e"></div></sc-for>
+</div>
+<div style="flex:1;min-width:0;margin-left:8px;display:flex;flex-direction:column;gap:4px">
+<div style="font:400 14px/1.2 'Jost'">{{ o.names }}</div>
+<div style="font:300 12px/1 'Jost';color:#b3a690">{{ o.meta }}</div>
+</div>
+<button onClick="{{ o.reorder }}" style="appearance:none;background:transparent;border:0;color:#c9a56b;min-height:44px;cursor:pointer;font:500 11px/1 'Jost';letter-spacing:.14em">REORDER</button>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+</div>
+
+<sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:16px;right:16px;bottom:96px;background:#efe6d6;color:#14110e;border-radius:2px;padding:10px 10px 10px 16px;display:flex;justify-content:space-between;align-items:center;animation:tsIn .25s ease;z-index:5">
+<span style="font:400 14px/1.2 'Jost'">{{ toast }}</span>
+<button onClick="{{ goBag }}" style="appearance:none;background:transparent;border:0;color:#14110e;cursor:pointer;font:500 11px/1 'Jost';letter-spacing:.14em;min-height:36px;padding:0 6px">VIEW BAG</button>
+</div>
+</sc-if>
+
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;background:#14110e;border-top:1px solid rgba(239,230,214,.14);display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding-bottom:26px">
+<sc-for list="{{ tabs }}" as="tb" hint-placeholder-count="5">
+<button onClick="{{ tb.go }}" style="appearance:none;background:transparent;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:{{ tb.color }};position:relative">
+<div style="width:16px;height:16px;border:1.5px solid currentColor;border-radius:{{ tb.radius }};transform:{{ tb.rot }}"></div>
+<span style="font:400 9px/1 'Jost';letter-spacing:.14em">{{ tb.label }}</span>
+<sc-if value="{{ tb.badge }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:6px;left:calc(50% + 4px);min-width:17px;height:17px;border-radius:9px;background:#c9a56b;color:#14110e;font:500 10px/17px 'Jost';text-align:center;padding:0 4px">{{ tb.badge }}</div></sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:402,&quot;height&quot;:874},&quot;direction&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;breastplate&quot;,&quot;catalogue&quot;,&quot;gallery&quot;],&quot;default&quot;:&quot;breastplate&quot;,&quot;tsType&quot;:&quot;'breastplate'|'catalogue'|'gallery'&quot;}}">
+const RAW = [
+  ['Reuben','Sardius','#8e2b25','Bright','Dynamic and invigorating.','One spray brings a dynamic, invigorating atmosphere, like Reuben has just passed through in full force.',['Blood orange','Black pepper','Vetiver']],
+  ['Simeon','Topaz','#b0822c','Warm','Sharp and resolute.','A decisive, spiced warmth for rooms that need presence.',['Saffron','Clove','Labdanum']],
+  ['Levi','Carbuncle','#6e1f35','Grounding','Ordered and elevated.','One spray leaves the air feeling ordered and elevated, like the work of Levi has just been carried out.',['Frankincense','Myrrh','Cedar']],
+  ['Judah','Emerald','#2f6e4a','Warm','Bold, warm, regal.','Bold, warm, and unmistakably regal. This scent is sure to show the pride of Judah.',['Amber','Oud','Honey']],
+  ['Issachar','Sapphire','#27447a','Grounding','Balanced and intentional.','One spray leaves the space balanced and intentional, like Issachar has paused, assessed, and set things in order.',['Sage','Olibanum','Sandalwood']],
+  ['Zebulun','Diamond','#7f8c8f','Fresh','Crisp and outward-looking.','One spray leaves the air crisp and outward-looking, like Zebulun has just returned from the sea with abundance.',['Sea salt','Cypress','Driftwood']],
+  ['Dan','Ligure','#a0522d','Grounding','Measured and just.','A steady, resinous calm with a smoky close.',['Pink pepper','Benzoin','Smoked wood']],
+  ['Naphtali','Agate','#5f7a63','Fresh','Clean and uplifting.','One spray brings a clean, uplifting presence, like Naphtali has just passed through with speed and favor.',['Bergamot','Fig leaf','White musk']],
+  ['Gad','Amethyst','#5b3a7a','Grounding','Fortified and steady.','One spray brings a fortified, steady atmosphere, like Gad has just stood his ground and moved forward.',['Juniper','Leather','Patchouli']],
+  ['Asher','Beryl','#8a6a2f','Warm','Cozy and refined.','One spray leaves the air cozy and refined, like a slow sip at the end of a long day.',['Cardamom','Tobacco','Vanilla']],
+  ['Joseph','Onyx','#3a3430','Bright','Grounded and elevated.','One spray leaves the air feeling grounded and elevated, like a well-crafted space built to last.',['Neroli','Iris','Vetiver']],
+  ['Benjamin','Jasper','#8c3d2e','Fresh','Quick and bright.','A lively, green brightness for mornings and entryways.',['Grapefruit','Mint','Cedarwood']],
+];
+const NUM = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+const PRICE = 35, SUB_OFF = 0.1;
+const T = RAW.map((r, i) => ({ id: i, name: r[0], stone: r[1], color: r[2], char: r[3], mood: r[4], line: r[5], notes: r[6], numeral: NUM[i] }));
+const CHARS = ['All', 'Warm', 'Fresh', 'Grounding', 'Bright'];
+const Q = [
+  { q: 'What should the room feel like?', o: [['Warm','Amber, spice, embers'],['Fresh','Sea air, green leaves'],['Grounding','Resin, wood, calm'],['Bright','Citrus, clarity, lift']] },
+  { q: 'Where will you spray it?', o: [['Living room','Where guests gather'],['Bedroom','Rest and quiet'],['Entryway','First impressions'],['Study','Focus and order']] },
+  { q: 'How present should it be?', o: [['A whisper','One spray, close by'],['Noticeable','Fills a room'],['Unmistakable','Lingers for days']] },
+];
+const money = n => '$' + n.toFixed(2).replace(/\.00$/, '');
+const money2 = n => '$' + n.toFixed(2);
+const GOLD = '#c9a56b', INK = '#efe6d6', MUTED = '#b3a690', LINE = 'rgba(239,230,214,.2)';
+
+class Component extends DCLogic {
+  state = {
+    screen: 'home', prev: [], pid: 3, qty: 1, plan: 'once', fav: {},
+    query: '', filter: 'All', sort: 'tribe',
+    step: 0, answers: [],
+    bag: [], delivery: 'std', pay: 'apple', usePoints: false,
+    points: 1240, toast: '', skipped: false, lastOrderId: '', earned: 0,
+    orders: [
+      { id: 'TS-2291', date: 'Aug 28', items: [[3,1],[7,1]], total: 70 },
+      { id: 'TS-2104', date: 'Jul 12', items: [[4,2]], total: 70 },
+      { id: 'TS-1987', date: 'May 30', items: [[0,1],[5,1],[9,1]], total: 105 },
+    ],
+  };
+  scrollRef = React.createRef();
+  componentDidUpdate(_, ps) {
+    if (ps.screen !== this.state.screen || ps.pid !== this.state.pid) { const el = this.scrollRef.current; if (el) el.scrollTop = 0; }
+  }
+  componentWillUnmount() { clearTimeout(this._t); }
+  go = (screen, extra = {}) => this.setState(s => ({ screen, prev: [...s.prev, s.screen].slice(-10), toast: '', ...extra }));
+  tab = screen => this.setState({ screen, prev: [], toast: '' });
+  back = () => this.setState(s => { const p = [...s.prev]; return { screen: p.pop() || 'home', prev: p }; });
+  open = id => this.go('product', { pid: id, qty: 1, plan: 'once' });
+  flash = msg => { clearTimeout(this._t); this.setState({ toast: msg }); this._t = setTimeout(() => this.setState({ toast: '' }), 2600); };
+  addItems = (items, plan = 'once') => this.setState(s => {
+    const bag = s.bag.map(b => ({ ...b }));
+    items.forEach(([id, q]) => { const f = bag.find(b => b.id === id && b.plan === plan); if (f) f.qty += q; else bag.push({ id, qty: q, plan }); });
+    return { bag };
+  });
+  unit = b => b.plan === 'sub' ? PRICE * (1 - SUB_OFF) : PRICE;
+  subtotal = () => this.state.bag.reduce((a, b) => a + this.unit(b) * b.qty, 0);
+  shipCost = () => { const sub = this.subtotal(); return this.state.delivery === 'exp' ? 14 : (sub >= 60 ? 0 : 6); };
+  opt = (active, extra = {}) => ({ border: active ? GOLD : LINE, bg: active ? 'rgba(201,165,107,.1)' : 'transparent', dot: active ? GOLD : 'transparent', ...extra });
+  card = t => ({ ...t, stoneUpper: t.stone.toUpperCase(), charUpper: t.char.toUpperCase(), priceLabel: money(PRICE), noteLine: t.notes.join(' · '), open: () => this.open(t.id) });
+
+  renderVals() {
+    const s = this.state;
+    const dir = this.props.direction ?? 'breastplate';
+    const tribes = T.map(this.card);
+    const chips = CHARS.map(c => { const a = s.filter === c; return { label: c, border: a ? GOLD : LINE, bg: a ? GOLD : 'transparent', fg: a ? '#14110e' : INK, pick: () => this.setState({ filter: c }) }; });
+    const byFilter = tribes.filter(t => s.filter === 'All' || t.char === s.filter);
+    const q = s.query.trim().toLowerCase();
+    let results = byFilter.filter(t => !q || [t.name, t.stone, ...t.notes].some(x => x.toLowerCase().includes(q)));
+    if (s.sort === 'az') results = [...results].sort((a, b) => a.name.localeCompare(b.name));
+    const p = this.card(T[s.pid]);
+    p.noteRows = [['TOP', p.notes[0]], ['HEART', p.notes[1]], ['BASE', p.notes[2]]].map(([tier, note]) => ({ tier, note }));
+    const unitP = s.plan === 'sub' ? PRICE * (1 - SUB_OFF) : PRICE;
+
+    const scores = s.answers;
+    const fam = Q[0].o[scores[0] ?? 0][0];
+    const pool = T.filter(t => t.char === fam);
+    const r0 = pool[((scores[1] ?? 0) + (scores[2] ?? 0)) % pool.length];
+    const r = { ...r0, upper: r0.name.toUpperCase() };
+
+    const sub = this.subtotal(), ship = this.shipCost();
+    const total = Math.max(0, sub + ship - (s.usePoints ? 10 : 0));
+    const bagCount = s.bag.reduce((a, b) => a + b.qty, 0);
+    const setBagQty = (i, d) => this.setState(st => ({ bag: st.bag.map((b, j) => j === i ? { ...b, qty: b.qty + d } : b).filter(b => b.qty > 0) }));
+
+    const tabDefs = [['home','SHOP','50%','none'],['search','SEARCH','50%','scale(.85)'],['finder','FINDER','1px','rotate(45deg) scale(.8)'],['bag','BAG','1px 1px 4px 4px','none'],['account','ACCOUNT','50% 50% 3px 3px','none']];
+    const tabOf = { home: 'home', product: s.prev.find(x => x !== 'product') || 'home', search: 'search', finder: 'finder', bag: 'bag', checkout: 'bag', done: 'bag', account: 'account' };
+    const activeTab = tabOf[s.screen];
+
+    const tier = s.points >= 2000 ? 'ONYX' : 'EMERALD';
+    const filled = Math.min(12, Math.round((s.points % 2000) / 2000 * 12));
+
+    return {
+      scrollRef: this.scrollRef,
+      isHome: s.screen === 'home', isSearch: s.screen === 'search', isProduct: s.screen === 'product', isFinder: s.screen === 'finder',
+      isBag: s.screen === 'bag', isCheckout: s.screen === 'checkout', isDone: s.screen === 'done', isAccount: s.screen === 'account',
+      dirGrid: dir === 'breastplate', dirList: dir === 'catalogue', dirCarousel: dir === 'gallery',
+      tribes, chips, homeList: byFilter,
+      families: CHARS.slice(1).map(c => ({ label: c, count: T.filter(t => t.char === c).length, open: () => { this.setState({ filter: c, query: '' }); this.tab('search'); } })),
+      goHome: () => this.tab('home'), goSearch: () => this.tab('search'), goFinder: () => this.tab('finder'), goBag: () => this.tab('bag'), goAccount: () => this.tab('account'),
+      back: this.back,
+      query: s.query, onQuery: e => this.setState({ query: e.target.value }), clearQuery: () => this.setState({ query: '' }),
+      sorts: [['tribe','TRIBE'],['az','A–Z']].map(([k, l]) => ({ label: l, bg: s.sort === k ? 'rgba(201,165,107,.18)' : 'transparent', fg: s.sort === k ? INK : MUTED, pick: () => this.setState({ sort: k }) })),
+      results, resultCount: results.length + (results.length === 1 ? ' SCENT' : ' SCENTS'), noResults: results.length === 0,
+      p, qty: s.qty,
+      favLabel: s.fav[s.pid] ? '♥ SAVED' : '♡ SAVE', favColor: s.fav[s.pid] ? GOLD : INK,
+      toggleFav: () => this.setState(st => ({ fav: { ...st.fav, [st.pid]: !st.fav[st.pid] } })),
+      buyOpts: [
+        this.opt(s.plan === 'once', { label: 'One-time purchase', hint: 'Luxury glass bottle', price: money(PRICE), pick: () => this.setState({ plan: 'once' }) }),
+        this.opt(s.plan === 'sub', { label: 'Subscribe & save 10%', hint: 'Refill every 6 weeks · skip anytime', price: money2(PRICE * (1 - SUB_OFF)), pick: () => this.setState({ plan: 'sub' }) }),
+      ],
+      dec: () => this.setState(st => ({ qty: Math.max(1, st.qty - 1) })), inc: () => this.setState(st => ({ qty: Math.min(9, st.qty + 1) })),
+      addPrice: money2(unitP * s.qty),
+      addToBag: () => { this.addItems([[s.pid, s.qty]], s.plan); this.flash(`${T[s.pid].name} × ${s.qty} added`); },
+      finderAsking: s.step < 3, finderDone: s.step >= 3, stepNum: Math.min(3, s.step + 1),
+      progress: [0, 1, 2].map(i => ({ color: i <= s.step ? GOLD : 'rgba(239,230,214,.18)' })),
+      question: Q[Math.min(2, s.step)].q,
+      options: Q[Math.min(2, s.step)].o.map(([label, hint], i) => ({ label, hint, pick: () => this.setState(st => ({ answers: [...st.answers.slice(0, st.step), i], step: st.step + 1 })) })),
+      canStepBack: s.step > 0, stepBack: () => this.setState(st => ({ step: st.step - 1 })),
+      r, openResult: () => this.open(r0.id), restart: () => this.setState({ step: 0, answers: [] }),
+      bagEmpty: s.bag.length === 0, bagHasItems: s.bag.length > 0,
+      bagItems: s.bag.map((b, i) => ({ ...T[b.id], qty: b.qty, planLabel: b.plan === 'sub' ? 'Subscription · every 6 weeks' : 'One-time · ' + money(PRICE), total: money2(this.unit(b) * b.qty), dec: () => setBagQty(i, -1), inc: () => setBagQty(i, 1) })),
+      subtotal: money2(sub), shipping: ship ? money2(ship) : 'Free', total: money2(total),
+      shipNote: sub >= 60 ? 'Your order ships free.' : `Add ${money2(60 - sub)} more for free shipping.`,
+      goCheckout: () => this.go('checkout'),
+      deliveryOpts: [
+        this.opt(s.delivery === 'std', { label: 'Standard', hint: '4–6 business days', price: sub >= 60 ? 'Free' : '$6', pick: () => this.setState({ delivery: 'std' }) }),
+        this.opt(s.delivery === 'exp', { label: 'Express', hint: '1–2 business days', price: '$14', pick: () => this.setState({ delivery: 'exp' }) }),
+      ],
+      payOpts: [['apple','Apple Pay'],['card','Visa •• 4821']].map(([k, label]) => this.opt(s.pay === k, { label, pick: () => this.setState({ pay: k }) })),
+      usePoints: s.usePoints, togglePoints: () => this.setState(st => ({ usePoints: !st.usePoints })),
+      pointsTrack: s.usePoints ? GOLD : 'rgba(239,230,214,.2)', pointsKnob: s.usePoints ? '19px' : '3px',
+      payBtnBg: s.pay === 'apple' ? INK : GOLD, payBtnFg: '#14110e',
+      payBtnLabel: (s.pay === 'apple' ? ' PAY WITH APPLE PAY · ' : 'PLACE ORDER · ') + money2(total),
+      placeOrder: () => this.setState(st => {
+        const id = 'TS-' + (2292 + st.orders.length);
+        const earned = Math.round(total);
+        return { screen: 'done', prev: [], lastOrderId: id, earned,
+          points: st.points - (st.usePoints ? 1000 : 0) + earned, usePoints: false,
+          orders: [{ id, date: 'Today', items: st.bag.map(b => [b.id, b.qty]), total }, ...st.orders], bag: [] };
+      }),
+      lastOrderId: s.lastOrderId, earned: s.earned,
+      pointsLabel: s.points.toLocaleString() + ' pts', tierLabel: tier + ' TIER',
+      tierHint: `${2000 - (s.points % 2000)} points to your next $20 reward`,
+      stoneTrack: T.map((t, i) => ({ color: i < filled ? t.color : 'rgba(239,230,214,.12)' })),
+      subNext: s.skipped ? 'next ships Nov 25' : 'next ships Oct 14',
+      skipLabel: s.skipped ? 'UNDO' : 'SKIP', skipSub: () => this.setState(st => ({ skipped: !st.skipped })),
+      orders: s.orders.map(o => ({
+        dots: o.items.map(([id]) => ({ color: T[id].color })),
+        names: o.items.map(([id, q]) => T[id].name + (q > 1 ? ' ×' + q : '')).join(', '),
+        meta: `${o.date} · ${o.id} · ${money2(o.total)}`,
+        reorder: () => { this.addItems(o.items); this.flash('Order added to bag'); },
+      })),
+      toast: s.toast,
+      tabs: tabDefs.map(([k, label, radius, rot]) => ({ label, radius, rot, color: activeTab === k ? GOLD : MUTED, badge: k === 'bag' && bagCount ? bagCount : false, go: () => this.tab(k) })),
+    };
+  }
+}
+</script>
+</body>
+</html>

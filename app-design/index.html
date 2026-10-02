@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><meta name="design_doc_mode" content="canvas"><script src="./ios-frame.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"><style>body{margin:0;background:#e6ddcc;font-family:'Jost',system-ui,sans-serif}a{color:#8a6a2f}a:hover{color:#14110e}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 8px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 12px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.6)}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:28px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.55)}</style></helmet>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Light mode for <a href="#2a">2a</a>: same layout and flows, two grounds</span></div>
+<p style="margin:0 0 28px;max-width:720px;font:400 13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.6)">Primary buttons turn to ink on light grounds. Stone colours stay as they are. Brass is darkened on grey so text stays readable; heather swaps it for plum.</p>
+<div class="dv-opts">
+<div class="dv-opt" id="3a"><div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Light grey · deep brass</div><dc-import name="TwelveScentsShopGrey" hint-size="402px,874px"></dc-import></div>
+<div class="dv-opt" id="3b"><div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Heather · plum</div><dc-import name="TwelveScentsShopHeather" hint-size="402px,874px"></dc-import></div>
+<div class="dv-opt"><div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Dark, for comparison</div><dc-import name="TwelveScentsShop" hint-size="402px,874px"></dc-import></div>
+</div>
+</section>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Full catalogue, blended: <a href="#1a">1a</a> stone grid for sprays, <a href="#1c">1c</a> cards for incense and censers, <a href="#1b">1b</a> list for browsing and essentials</span></div>
+<p style="margin:0 0 28px;max-width:720px;font:400 13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.6)">Adds the rest of the range from the site: hand-rolled incense, rock incense, burning oils, charcoal and the Tabanakin' hanging censer. Product pages cross-sell (resin → charcoal + censer, spray ↔ matching incense). The finder asks spray vs. burn and suggests a pairing. Incense scent names, prices and sizes are placeholders.</p>
+<div class="dv-opts">
+<div class="dv-opt" id="2a"><div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Blended shop · all product lines</div><dc-import name="TwelveScentsShop" hint-size="402px,874px"></dc-import></div>
+</div>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Twelve Scents iOS app — three home directions, same shop/search/finder/bag/checkout/account flow</span></div>
+<p style="margin:0 0 28px;max-width:720px;font:400 13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.6)">Every phone is fully clickable. Palette: near-black, parchment and brass, with each tribe carrying the colour of its breastplate stone. Scent notes, prices ($35, 10% off subscription), rewards and orders are placeholders to replace with real catalogue data.</p>
+<div class="dv-opts">
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Breastplate — the twelve stones in a 3×4 grid</div><dc-import name="TwelveScentsPhone" direction="breastplate" hint-size="402px,874px"></dc-import></div>
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Catalogue — filterable numbered list, fastest to buy</div><dc-import name="TwelveScentsPhone" direction="catalogue" hint-size="402px,874px"></dc-import></div>
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Gallery — swipeable full-colour tribe cards</div><dc-import name="TwelveScentsPhone" direction="gallery" hint-size="402px,874px"></dc-import></div>
+</div>
+<p class="dv-next">Try next: "use <a class="dv-oid" href="#1a">1a</a> home with <a class="dv-oid" href="#1c">1c</a> product pages" · "a light parchment version" · "add onboarding"</p>
+</section>
+</x-dc>
+</body></html>
